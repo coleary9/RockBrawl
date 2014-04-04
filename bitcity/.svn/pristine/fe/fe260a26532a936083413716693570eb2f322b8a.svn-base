@@ -1,0 +1,79 @@
+# BitCity Studios:
+# Cameron O'Leary <coleary9@jhu.edu>
+# Steve Griffin  <sgriff27@jhu.edu>
+# Jeremy Dolinko <j.dolinko@gmail.com>
+# Jonathan Rivera <jriver21@jhu.edu>
+# Michael Shavit  <shavitmichael@gmail.com>
+
+from pygame.locals import *
+from pygame import key
+from pygame import display
+from pygame import Rect
+import pygame.draw
+
+from images import movingBackground as MB
+import state
+import glob
+
+"""
+The Volume menu state.
+"""
+
+
+class Volume(state.State):
+
+    def __init__(self, s):
+        super(Volume, self).__init__(s)
+        self.background = MB.MovingBackground(s)
+        self.title = "Volume"
+        self.description = "Use Left & Right Arrow Keys to change volume"
+
+    def update(self, dt):
+        """Perform all calculations for the amount of time that has passed."""
+        super(Volume, self).update(dt)
+        self.background.update(dt)
+
+    def draw(self):
+        """Perform all graphical tasks for this frame."""
+        self.background.draw()
+        self.drawTitle()
+        self.drawVolume()
+        display.flip()
+
+    def drawTitle(self):
+        col = glob.FONT_COLOR
+        surf = glob.FONT.render(self.title, True, col)
+        width, height = surf.get_size()
+        left = (self.width - width) / 2
+        top = self.height / 10
+        self.s.blit(surf, (left, top))
+
+    def drawVolume(self):
+        col = glob.FONT_COLOR
+        surf = glob.FONT.render(str(glob.Volume.VOLUME), True, col)
+        width, height = surf.get_size()
+        left = (self.width - width) / 2
+        top = self.height / 3 + height * 0
+        self.s.blit(surf, (left, top))
+
+        surf = glob.FONT.render(self.description, True, col)
+        width, height = surf.get_size()
+        top = self.height / 3 + height * 4
+        left = (self.width - width) / 2
+        self.s.blit(surf, (left, top))
+
+    def processKeys(self, keys, dt):
+        result = super(Volume, self).processKeys(keys, dt)
+        if result != state.standardString:
+            return result
+        elif keys[[glob.mappedKeys["select"]]]:
+            return glob.menuString
+        elif keys[glob.mappedKeys["left"]]:
+            if glob.Volume.VOLUME > 0:
+                glob.Volume.VOLUME -= 1
+                self.timeAlive = 130
+        elif keys[glob.mappedKeys["right"]]:
+            if glob.Volume.VOLUME < 100:
+                glob.Volume.VOLUME += 1
+                self.timeAlive = 130
+        return None

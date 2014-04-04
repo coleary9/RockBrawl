@@ -1,0 +1,79 @@
+import glob
+
+
+def a():
+    if glob.Joystick.get_button(8):
+        return True
+    return False
+
+
+def b():
+    if glob.Joystick.get_button(1):
+        return True
+    return False
+
+
+def c():
+    if glob.Joystick.get_button(4):
+        return True
+    return False
+
+
+def d():
+    if glob.Joystick.get_axis(3) < - .5:
+        return True
+    return False
+
+
+def e():
+    if glob.Joystick.get_axis(3) > .5:
+        return True
+    return False
+
+
+def f():
+    if glob.Joystick.get_axis(2) < -.5:
+        return True
+    return False
+
+
+def g():
+    if glob.Joystick.get_axis(2) > .5:
+        return True
+    return False
+
+
+def h():
+    if glob.Joystick.get_button(1):
+        return True
+    return False
+
+
+def i():
+    if glob.Joystick.get_button(0):
+        return True
+    return False
+
+
+def j():
+    if glob.Joystick.get_button(2):
+        return True
+    return False
+
+
+def k():
+    if glob.Joystick.get_button(4):
+        return True
+    return False
+
+
+def l():
+    if glob.Joystick.get_button(5):
+        return True
+    return False
+
+
+def m():
+    if glob.Joystick.get_button(6):
+        return True
+    return False

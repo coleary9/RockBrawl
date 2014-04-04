@@ -1,0 +1,245 @@
+# BitCity Studios:
+# Cameron O'Leary <coleary9@jhu.edu>
+# Steve Griffin  <sgriff27@jhu.edu>
+# Jeremy Dolinko <j.dolinko@gmail.com>
+# Jonathan Rivera <jriver21@jhu.edu>
+# Michael Shavit  <shavitmichael@gmail.com>
+
+import state
+import glob
+from images import movingBackground as MB
+from pygame import key
+from pygame import display
+from pygame import Rect
+from pygame import joystick
+import pygame.draw
+from pygame.locals import *
+import os
+
+from images import gameImage as GI
+
+
+class joystick(state.State):
+
+    def __init__(self, s):
+        super(joystick, self).__init__(s)
+        self.background = MB.MovingBackground(s)
+        self.title = "Controller Settings"
+        self.subHeading = "which peripheral do you want to use"
+        self.keyboard = False
+
+        # keyboard menu settings
+        self.chooseKeyboard = "Keyboard"
+        self.chooseController = "Controller"
+        self.chooseButtons = "choose Buttons"
+        self.mainChoices = (self.chooseKeyboard,
+                            self.chooseController,
+                            glob.settingsString)
+
+        # controller menu settings
+        self.controllerChoices = (self.chooseButtons,
+                                  glob.keySettings,
+                                  glob.settingsString)
+        # genereal choices tuple
+        self.choices = self.mainChoices
+
+        self.controller = False  # true if mapping to controller
+
+        self.buttonIntake = False  # true if we are currently button intaking
+
+        # will be greater than 0 if editing a specific key,
+        # is index of glob.typesOfAttacks
+        self.keyChoice = 0
+
+        # position for menu selection
+        self.pos = 0
+
+        pygame.event.clear()
+        # clears the event queue to make sure input is clean
+
+        # name of key to be mapped to be blitted to screen since tab and shift
+        # don't have ascii values
+        self.keyInput = ''
+        # actual key value of key to be changed
+        self.keyChange = ''
+
+    def draw(self):
+        self.background.draw()
+        self.blitToScreen(self.title, 0, 10)
+        if self.controller:
+            self.controllerSetup()
+            self.choices = self.controllerChoices
+        # 10 used so it cna never be self.pos=10
+        elif self.keyboard:
+            if self.buttonIntake:
+                if self.keyChoice > 0:
+                    self.keyboardMap(self.keyChoice)
+                    self.choices = ()
+                else:
+                    self.choices = (
+                        glob.typesOfAttacks[3:] + [glob.settingsString])
+                    self.blitToScreen(
+                        "what key do you want to change",
+                        self.s.get_height() * .2,
+                        10)
+            else:
+                self.choices = self.controllerChoices
+
+        else:
+            self.blitToScreen(self.subHeading, self.s.get_height() * .2, 10)
+        for i in range(len(self.choices)):
+            # i+6/15 makes it look pretty
+
+           #if more than 8 menu items are split in half
+           if(len(self.choices))>8:
+		if i<len(self.choices)/2:
+                   self.blitToScreen(
+                        self.choices[i],
+                        self.s.get_height() * (i + 4) / 15,
+                        i, .25)
+                else:
+                   self.blitToScreen(
+                        self.choices[i],
+                        self.s.get_height() * (i-(len(self.choices)/2-4)) / 15,
+                        i, .75)   
+
+
+           #if less than 8 menu items can just go in the center
+           else:
+            	self.blitToScreen(
+                	self.choices[i],
+                	self.s.get_height() * (i + 4) / 15,
+                	i)
+        display.flip()
+
+    def keyboardMap(self, keyInt):
+        self.blitToScreen("press a key for", self.s.get_height() * .2, 10)
+
+        self.blitToScreen(
+            glob.typesOfAttacks[keyInt],
+            self.s.get_height() * .3,
+            10)
+
+        self.blitToScreen(
+            "you choose: " + self.keyInput,
+            self.s.get_height() * .6,
+            10)
+
+        if self.keyInput != '':
+            self.blitToScreen(
+                "press enter if you want this key",
+                self.s.get_height() * .7,
+                10)
+
+    def controllerSetup(self):
+        pygame.joystick.init()
+        for i in range(pygame.joystick.get_count()):
+            pygame.joystick.Joystick(i).get_name()
+        if pygame.joystick.get_count() < 2:
+            self.blitToScreen("hook up joystick", self.s.get_height() * .2, 10)
+        else:
+            self.blitToScreen(
+                "Joystick attached!",
+                self.s.get_height() * .2,
+                10)
+
+# takes what to print and at what height, always blits to center
+# of the screen
+    def blitToScreen(self, toPrint, height, i,widthCoefficent=.5):
+        col = glob.FONT_COLOR
+        backCol = glob.SELECTED_FONT_COLOR
+        if i == self.pos:
+            backCol, col = col, backCol
+        image = glob.FONT.render(toPrint, True, col)
+        rect = image.get_rect()
+        rect.x = widthCoefficent * (self.s.get_width() - image.get_width())
+        rect.y = 20 + height
+        if i == self.pos:
+            pygame.draw.rect(self.s, backCol, rect)
+        self.s.blit(image, rect)
+
+    def update(self, dt):
+        super(joystick, self).update(dt)
+        self.background.update(dt)
+
+    def incMenu(self, amount):
+        """Steps by the passed amount in the menu."""
+        self.pos += amount
+        if self.pos < 0:
+            self.pos = len(self.choices) - 1
+        elif self.pos > len(self.choices) - 1:
+            self.pos = 0
+
+    def processSelc(self):
+        if self.choices[self.pos] == self.chooseKeyboard:
+            self.keyboard = True
+        elif self.choices[self.pos] == self.chooseController:
+            self.controller = True
+        elif self.choices[self.pos] == self.chooseButtons:
+            self.buttonIntake = True
+        elif self.choices[self.pos] in glob.typesOfAttacks:
+            self.keyChoice = self.pos + 3
+        else:
+            return self.choices[self.pos]
+
+    def processKeys(self, keys, dt):
+        result = super(joystick, self).processKeys(keys, dt)
+        if result != state.standardString:
+            return result
+        elif self.buttonIntake:
+            for key in pygame.event.get():
+                if key.type == KEYDOWN:
+                    if key.unicode.isalnum():
+                        self.keyInput = key.unicode
+                        self.keyChange = ord(key.unicode)
+            if keys[K_TAB]:
+                self.keyChange = K_TAB
+                self.keyInput = "tab"
+            if keys[K_UP]:
+                self.keyChange = K_UP
+                self.keyInput = "up key"
+            if keys[K_DOWN]:
+                self.keyChange = K_DOWN
+                self.keyInput = "down key"
+            if keys[K_RIGHT]:
+                self.keyChange = K_RIGHT
+                self.keyInput = "right key"
+            if keys[K_LEFT]:
+                self.keyChange = K_LEFT
+                self.keyInput = "left key"
+            if keys[K_RSHIFT]:
+                self.keyChange = K_RSHIFT
+                self.keyInput = "Right Shift"
+            if keys[K_LSHIFT]:
+                self.keyChange = K_LSHIFT
+                self.keyInput = "Left shift"
+            pygame.event.clear()
+
+        if keys[glob.mappedKeys["up"]]:
+            self.timeAlive = 0
+            self.incMenu(-1)
+        elif keys[glob.mappedKeys["down"]]:
+            self.timeAlive = 0
+            self.incMenu(1)
+        #handles left and right for long menus with two columns
+
+        elif len(self.choices)>=8 and keys[glob.mappedKeys["right"]]:
+            self.timeAlive = 0
+            self.incMenu(len(self.choices)/2)
+
+        elif len(self.choices)>=8 and keys[glob.mappedKeys["left"]]:
+            self.timeAlive = 0
+            self.incMenu(len(self.choices)/2)
+
+
+        elif keys[glob.mappedKeys["select"]]:
+            self.timeAlive = 0
+            if self.keyChange != '' and self.keyChoice > 0:
+                glob.Keys.currentKeys[self.keyChoice] = self.keyChange
+                glob.mappedKeys = dict(
+                    zip(glob.typesOfAttacks, glob.Keys.currentKeys))
+                self.keyChoice = 0
+                self.keyChange = ''
+                self.keyInput = ''
+            elif len(self.choices) != 0:
+                return self.processSelc()

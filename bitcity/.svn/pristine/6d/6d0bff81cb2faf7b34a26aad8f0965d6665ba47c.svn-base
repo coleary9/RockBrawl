@@ -1,0 +1,123 @@
+# BitCity Studios:
+# Cameron O'Leary <coleary9@jhu.edu>
+# Steve Griffin  <sgriff27@jhu.edu>
+# Jeremy Dolinko <j.dolinko@gmail.com>
+# Jonathan Rivera <jriver21@jhu.edu>
+# Michael Shavit  <shavitmichael@gmail.com>
+
+import state
+import glob
+from images import movingBackground as MB
+from pygame import key
+from pygame import display
+from pygame import Rect
+from pygame import joystick
+import pygame.draw
+from pygame.locals import *
+import os
+
+from images import gameImage as GI
+
+class joystick(state.State):
+
+    def __init__(self, s):
+        super(joystick, self).__init__(s)
+        self.background = MB.MovingBackground(s)
+        self.title = "Controller Settings"
+        self.subHeading = "which peripheral do you want to use"
+        self.keyboard = False
+        self.chooseKeyboard = "Keyboard"
+        self.chooseController = "Controller"
+        self.chooseButtons = "choose Buttons"
+
+        self.mainChoices=(self.chooseKeyboard,\
+                          self.chooseController,\
+                          glob.settingsString)
+
+        self.controllerChoices=(self.chooseButtons,\
+                                glob.keySettings,\
+                                glob.settingsString)
+
+        self.choices=self.mainChoices
+        self.controller = False
+        self.buttonIntake=False
+        self.pos=0
+        pygame.event.clear()
+# clears the event file to make sure input is clean
+
+    def draw(self):
+        self.background.draw()
+        self.blitToScreen(self.title, 0, 10) 
+        if self.controller:
+           self.controllerSetup()
+           self.choices=self.controllerChoices
+        #10 used so it cna never be self.pos=10
+        elif self.keyboard:
+           self.choices=self.controllerChoices
+        else:
+           self.blitToScreen(self.subHeading, self.s.get_height() * .2,10)
+        for i in range(len(self.choices)):
+             self.blitToScreen(self.choices[i], self.s.get_height() * (i+6)/15,i)
+        display.flip()
+
+
+    def controllerSetup(self):
+        pygame.joystick.init()
+        for i in range(pygame.joystick.get_count()):
+            pygame.joystick.Joystick(i).get_name()
+        if pygame.joystick.get_count()<2:
+            self.blitToScreen("hook up joystick", self.s.get_height() * .2,10)
+        else:
+            self.blitToScreen("Joystick attached!", self.s.get_height() * .2,10)
+
+# takes what to print and at what height, always blits to center
+# of the screen
+    def blitToScreen(self, toPrint, height, i):
+        col = glob.FONT_COLOR
+        backCol = glob.SELECTED_FONT_COLOR
+        if i == self.pos:
+            backCol, col = col, backCol
+        image = glob.FONT.render(toPrint, True, col)
+        rect = image.get_rect()
+        rect.x = .5 * (self.s.get_width() - image.get_width())
+        rect.y = 20 + height
+        if i == self.pos:
+            pygame.draw.rect(self.s, backCol, rect)
+        self.s.blit(image, rect)
+
+    def update(self, dt):
+        super(joystick, self).update(dt)
+        self.background.update(dt)
+
+    def incMenu(self, amount):
+        """Steps by the passed amount in the menu."""
+        self.pos += amount
+        if self.pos < 0:
+            self.pos = len(self.choices) - 1
+        elif self.pos > len(self.choices)- 1:
+            self.pos = 0
+        print self.pos
+
+    def processSelc(self):
+        if self.choices[self.pos]==self.chooseKeyboard:
+             self.keyboard=True
+        elif self.choices[self.pos]==self.chooseController:
+             self.controller=True
+        elif self.choices[self.pos]==self.chooseButtons:
+             self.buttonIntake=True
+        else:
+             return self.choices[self.pos]
+
+    def processKeys(self, keys, dt):
+        result = super(joystick, self).processKeys(keys, dt)
+        if result != state.standardString:
+            return result
+        elif keys[glob.mappedKeys["up"]]:
+            self.timeAlive = 0
+            self.incMenu(-1)
+        elif keys[glob.mappedKeys["down"]]:
+            self.timeAlive = 0
+            self.incMenu(1)
+        elif keys[glob.mappedKeys["select"]]:
+            self.timeAlive=0
+            return self.processSelc()

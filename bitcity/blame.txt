@@ -1,0 +1,4319 @@
+------------------------------------------------------------------------
+r497 | sgriffin | 2013-11-07 19:52:58 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+   M /gameObject.py
+   M /item.py
+
+Fixes.
+
+------------------------------------------------------------------------
+r496 | mshavit | 2013-11-07 19:51:51 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+test
+
+------------------------------------------------------------------------
+r495 | sgriffin | 2013-11-07 19:47:30 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /frameHandler.py
+   D /frameLoader.py
+   M /gameObject.py
+   A /images/frameLoader.py
+
+Refactorings to frames.
+
+------------------------------------------------------------------------
+r494 | mshavit | 2013-11-07 19:45:21 -0500 (Thu, 07 Nov 2013) | 1 line
+Changed paths:
+   M /README
+
+
+------------------------------------------------------------------------
+r493 | mshavit | 2013-11-07 19:42:12 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+   M /camera.py
+   M /states/game.py
+
+camera starts at player position on spawn
+
+------------------------------------------------------------------------
+r492 | jdolinko | 2013-11-07 19:37:37 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /sounds/music.py
+
+FX stops when not in game.
+
+------------------------------------------------------------------------
+r491 | jrivera | 2013-11-07 19:32:15 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+
+added block key
+
+------------------------------------------------------------------------
+r490 | jrivera | 2013-11-07 19:30:15 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+   M /states/game.py
+
+Blocking with c key
+
+------------------------------------------------------------------------
+r489 | mshavit | 2013-11-07 19:25:15 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /main.py
+   M /states/game.py
+
+performance boost + bug fix for spawn/respawn (reset dt on spawn)
+
+------------------------------------------------------------------------
+r488 | jdolinko | 2013-11-07 19:15:25 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+   M /levels/level2.tmx
+
+Some level 2 fixes.
+
+------------------------------------------------------------------------
+r487 | coleary | 2013-11-07 18:59:02 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+   M /glob.py
+   M /layers/hud.py
+   M /main.py
+   M /states/game.py
+   M /states/highScore.py
+   M /states/highscores.txt
+
+fixes scores and huds and stuff
+
+------------------------------------------------------------------------
+r486 | sgriffin | 2013-11-07 18:45:59 -0500 (Thu, 07 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+   M /attack.py
+   A /frameHandler.py
+   M /gameObject.py
+
+Refactor of frame handling.
+
+------------------------------------------------------------------------
+r485 | coleary | 2013-11-06 20:14:38 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /states/game.py
+   M /states/highscores.txt
+
+fixes the respawn bug of not respaning the charcter you want
+
+------------------------------------------------------------------------
+r484 | sgriffin | 2013-11-06 19:06:22 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   D /images/losAngeles.png
+
+losAngeles.png is now stored in levels, so this one was useless.
+
+------------------------------------------------------------------------
+r483 | sgriffin | 2013-11-06 18:51:41 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /glob.py
+
+pep8 of glob.
+
+------------------------------------------------------------------------
+r482 | jrivera | 2013-11-06 18:12:40 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+minor lvl tweak
+
+------------------------------------------------------------------------
+r481 | jdolinko | 2013-11-06 17:59:36 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/enemy.py
+   M /actors/player.py
+   M /attack.py
+   M /gameObject.py
+   M /glob.py
+   M /images/imageDict.py
+   M /layers/dynamicGroup.py
+   M /layers/hud.py
+   M /layers/layer.py
+   M /levels/imageTileDict.py
+   M /levels/tile.py
+   M /levels/tmxParser.py
+   M /main.py
+   M /states/cut.py
+   M /states/game.py
+   M /states/highScore.py
+
+deployed for 8
+
+------------------------------------------------------------------------
+r480 | coleary | 2013-11-06 17:56:23 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /states/menu.py
+
+there
+
+------------------------------------------------------------------------
+r479 | coleary | 2013-11-06 17:55:37 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   M /states/game.py
+   M /states/menu.py
+
+this
+
+------------------------------------------------------------------------
+r478 | jdolinko | 2013-11-06 17:55:23 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+
+reaaaadme
+
+------------------------------------------------------------------------
+r477 | jrivera | 2013-11-06 17:55:20 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+moved checkpoint
+
+------------------------------------------------------------------------
+r476 | mshavit | 2013-11-06 17:46:16 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/enemy.py
+
+enemeies suffer from instant death
+
+------------------------------------------------------------------------
+r475 | sgriffin | 2013-11-06 17:46:02 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /glob.py
+
+Fixed settings when launching from other folders.
+
+------------------------------------------------------------------------
+r474 | coleary | 2013-11-06 17:43:24 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+   M /glob.py
+   M /states/menu.py
+
+no fucking blinking
+
+------------------------------------------------------------------------
+r473 | jdolinko | 2013-11-06 17:34:34 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+
+Cannot change player on level 1
+
+------------------------------------------------------------------------
+r472 | jrivera | 2013-11-06 17:32:46 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+Took out gun guards
+
+------------------------------------------------------------------------
+r471 | coleary | 2013-11-06 17:28:48 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+
+fucking finally
+
+------------------------------------------------------------------------
+r470 | mshavit | 2013-11-06 17:25:57 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/tile.py
+   M /states/game.py
+
+beers reappear when die
+
+------------------------------------------------------------------------
+r469 | jrivera | 2013-11-06 17:25:52 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+modified lvl
+
+------------------------------------------------------------------------
+r468 | jdolinko | 2013-11-06 17:24:08 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/bandMember.py
+   M /actors/player.py
+
+Cooldown is now passed to and from bandmembers!
+
+------------------------------------------------------------------------
+r467 | sgriffin | 2013-11-06 17:22:55 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /glob.py
+
+Made settings persistent.
+
+------------------------------------------------------------------------
+r466 | coleary | 2013-11-06 17:02:21 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/player.py
+
+for drunk
+
+------------------------------------------------------------------------
+r465 | sgriffin | 2013-11-06 16:57:45 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /glob.py
+
+Fix to glob to remove crash. Still broken though.
+
+------------------------------------------------------------------------
+r464 | sgriffin | 2013-11-06 16:54:50 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   A /images/movingBackground.py
+
+Added background.
+
+------------------------------------------------------------------------
+r463 | sgriffin | 2013-11-06 16:54:00 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   A /sounds/__init__.py
+   A /sounds/music.py
+
+Sounds.`
+
+------------------------------------------------------------------------
+r462 | sgriffin | 2013-11-06 16:53:13 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   A /images/gameImage.py
+   M /main.py
+
+Added gameImage
+
+------------------------------------------------------------------------
+r461 | sgriffin | 2013-11-06 16:14:16 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/enemy.py
+   A /levels/tile.py
+   D /tile.py
+
+Tile moved to new location.
+
+------------------------------------------------------------------------
+r460 | sgriffin | 2013-11-06 16:09:49 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /layers/layer.py
+   M /main.py
+   M /states/cut.py
+   M /states/highScore.py
+   M /states/menu.py
+   M /states/title.py
+   M /states/youWin.py
+
+Fixes to imports.
+
+------------------------------------------------------------------------
+r459 | sgriffin | 2013-11-06 16:02:45 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /actors/enemy.py
+   M /actors/player.py
+   M /states/game.py
+
+Fixes to imports that were overwritten by bad merges. Still more to do.
+
+------------------------------------------------------------------------
+r458 | sgriffin | 2013-11-06 15:56:15 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   D /bandMember.py
+   D /cut.py
+   D /dynamicGroup.py
+   D /enemy.py
+   D /exit.py
+   D /game.py
+   D /gameImage.py
+   D /guard.py
+   D /gunGuard.py
+   D /highScore.py
+   D /hud.py
+   D /layer.py
+   D /menu.py
+   D /movingBackground.py
+   D /music.py
+   D /player.py
+   D /rivalGuitar.py
+   D /state.py
+   D /title.py
+   D /youWin.py
+
+Removal of bottom level .py that were moved into folders.
+
+------------------------------------------------------------------------
+r457 | sgriffin | 2013-11-06 15:54:14 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   A /actors
+   A /actors/__init__.py
+   A /actors/bandMember.py
+   A /actors/enemy.py
+   A /actors/guard.py
+   A /actors/gunGuard.py
+   A /actors/player.py
+   A /actors/rivalGuitar.py
+   M /aiAnalyzer.py
+   M /attack.py
+   M /enemySpawner.py
+   M /frameLoader.py
+   M /gameObject.py
+   M /glob.py
+   M /images/__init__.py
+   M /item.py
+   A /layers
+   A /layers/__init__.py
+   A /layers/dynamicGroup.py
+   A /layers/hud.py
+   A /layers/layer.py
+   M /levels/tmxParser.py
+   M /main.py
+   A /states
+   A /states/__init__.py
+   A /states/cut.py
+   A /states/exit.py
+   A /states/game.py
+   A /states/highScore.py
+   A /states/highscores.txt
+   A /states/menu.py
+   A /states/state.py
+   A /states/title.py
+   A /states/youWin.py
+   M /tile.py
+
+Initial commit of new folder structure. Quite likely to be broken.
+
+------------------------------------------------------------------------
+r456 | coleary | 2013-11-06 15:52:35 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /images/usmap.png
+
+cut scene fixed
+
+------------------------------------------------------------------------
+r455 | coleary | 2013-11-06 15:38:13 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /highScore.py
+   M /main.py
+
+fixes crashing
+
+------------------------------------------------------------------------
+r454 | jrivera | 2013-11-06 08:23:13 -0500 (Wed, 06 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+   M /levels/level2.tmx
+   M /player.py
+
+tweaked lvl. increased how drunk you need for posion. updated readme. increased starting hp
+
+------------------------------------------------------------------------
+r453 | jrivera | 2013-11-05 21:58:38 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+commit
+
+------------------------------------------------------------------------
+r452 | mshavit | 2013-11-05 21:53:48 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+
+afef
+
+------------------------------------------------------------------------
+r451 | jrivera | 2013-11-05 21:52:42 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+lvl more
+
+------------------------------------------------------------------------
+r450 | mshavit | 2013-11-05 21:51:40 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+
+update README
+
+------------------------------------------------------------------------
+r449 | jrivera | 2013-11-05 21:42:30 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+more lvl
+
+------------------------------------------------------------------------
+r448 | mshavit | 2013-11-05 21:37:01 -0500 (Tue, 05 Nov 2013) | 3 lines
+Changed paths:
+   M /cut.py
+   A /images/usmap.png
+   A /images/usmap.svg
+   M /levels/level2.tmx
+
+cutscene
+
+
+------------------------------------------------------------------------
+r447 | jrivera | 2013-11-05 21:34:32 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+more lvlll
+
+------------------------------------------------------------------------
+r446 | jdolinko | 2013-11-05 21:29:20 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /attack.py
+
+Dumb projectile fix.
+
+------------------------------------------------------------------------
+r445 | jrivera | 2013-11-05 21:27:12 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+more lvl
+
+------------------------------------------------------------------------
+r444 | sgriffin | 2013-11-05 21:20:02 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+Added special attack sign.
+
+------------------------------------------------------------------------
+r443 | jrivera | 2013-11-05 21:18:13 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+more lvl
+
+------------------------------------------------------------------------
+r442 | sgriffin | 2013-11-05 21:12:20 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+Added manhole.
+
+------------------------------------------------------------------------
+r441 | jrivera | 2013-11-05 21:09:05 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+fixed lvl
+
+------------------------------------------------------------------------
+r440 | sgriffin | 2013-11-05 21:06:43 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   A /images/bullet.png
+   M /levels/losAngeles.svg
+
+Added bullet.
+
+------------------------------------------------------------------------
+r439 | jdolinko | 2013-11-05 21:06:11 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+   M /hud.py
+   M /player.py
+
+Player special attacks are different! Cooldown in hud under intox.
+
+------------------------------------------------------------------------
+r438 | sgriffin | 2013-11-05 20:59:06 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /README
+   M /attack.py
+
+Added bullet.
+
+------------------------------------------------------------------------
+r437 | jrivera | 2013-11-05 20:53:09 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level2.tmx
+
+A broken level for mike to look at
+
+------------------------------------------------------------------------
+r436 | mshavit | 2013-11-05 20:35:23 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+something something cutscene
+
+------------------------------------------------------------------------
+r435 | mshavit | 2013-11-05 20:32:01 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /cut.py
+   M /main.py
+   M /menu.py
+
+cutscene added (temp cutscene)
+
+------------------------------------------------------------------------
+r434 | sgriffin | 2013-11-05 20:31:17 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+Work on LV tiles.
+
+------------------------------------------------------------------------
+r433 | jdolinko | 2013-11-05 20:22:06 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /hud.py
+   M /player.py
+
+If intox > 50, you get POISONED!
+
+------------------------------------------------------------------------
+r432 | jdolinko | 2013-11-05 20:13:02 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gunGuard.py
+   M /player.py
+
+SHOOTANS
+
+------------------------------------------------------------------------
+r431 | mshavit | 2013-11-05 20:12:05 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /cut.py
+   M /main.py
+
+can do continue to play game
+
+------------------------------------------------------------------------
+r430 | sgriffin | 2013-11-05 20:11:21 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+Update for level 2 tilesheet.
+
+------------------------------------------------------------------------
+r429 | mshavit | 2013-11-05 20:04:19 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /main.py
+
+Can switch between level!!!
+
+------------------------------------------------------------------------
+r428 | mshavit | 2013-11-05 19:52:55 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   A /levels/level2.tmx
+   M /main.py
+
+blank level 2. going to level WIP
+
+------------------------------------------------------------------------
+r427 | mshavit | 2013-11-05 19:27:50 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /player.py
+
+lethal lava
+
+------------------------------------------------------------------------
+r426 | mshavit | 2013-11-05 19:15:38 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+updated Tile sheet and level with LAVAAAAA (non lethal lava)
+
+------------------------------------------------------------------------
+r425 | sgriffin | 2013-11-05 19:15:22 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /gunGuard.py
+   A /images/gunGuard.png
+
+Gun guard added.
+
+------------------------------------------------------------------------
+r424 | mshavit | 2013-11-05 18:55:41 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   A /levels/losAngeles.png
+
+stuff
+
+------------------------------------------------------------------------
+r423 | jdolinko | 2013-11-05 18:54:49 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /gunGuard.py
+
+double grumble
+
+------------------------------------------------------------------------
+r422 | jrivera | 2013-11-05 18:52:54 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Left shift key switching
+
+------------------------------------------------------------------------
+r421 | mshavit | 2013-11-05 18:52:11 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   A /levels/imageTileDict.py
+   M /tile.py
+
+Fixed tile editting stuff
+
+------------------------------------------------------------------------
+r420 | jdolinko | 2013-11-05 18:51:39 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /gunGuard.py
+
+grumble
+
+------------------------------------------------------------------------
+r419 | jdolinko | 2013-11-05 18:37:11 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+   M /game.py
+   M /guard.py
+   A /gunGuard.py
+
+gunGuards in progress
+
+------------------------------------------------------------------------
+r418 | mshavit | 2013-11-05 18:33:17 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+
+checkpoitns work by design correctly
+
+------------------------------------------------------------------------
+r417 | jdolinko | 2013-11-05 18:18:39 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /guard.py
+   M /rivalGuitar.py
+
+Attacks taken out of think() in enemy.py. Super'd in individual enemy's think() method.
+
+------------------------------------------------------------------------
+r416 | jdolinko | 2013-11-05 18:11:30 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /enemy.py
+   M /game.py
+   M /guard.py
+   M /player.py
+
+Collisions now passed attackObjects/Enemies. AttackObjects and enemies have an internal damage integer.
+
+------------------------------------------------------------------------
+r415 | sgriffin | 2013-11-05 02:07:14 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+
+Refactoring of attacks.
+
+------------------------------------------------------------------------
+r414 | sgriffin | 2013-11-05 01:50:26 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /player.py
+
+Refactoring of attack collisions.
+
+------------------------------------------------------------------------
+r413 | sgriffin | 2013-11-05 01:34:57 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Refactored attack removal.
+
+------------------------------------------------------------------------
+r412 | sgriffin | 2013-11-05 01:30:03 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Switched hud to a local since it wasn't being used anymore as a field.
+
+------------------------------------------------------------------------
+r411 | sgriffin | 2013-11-05 01:21:19 -0500 (Tue, 05 Nov 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   A /dynamicGroup.py
+   M /game.py
+   M /gameObject.py
+   M /glob.py
+   M /hud.py
+   D /images/background1_roughlight2.png
+   A /images/bg1.png
+   A /images/bg2.png
+   D /images/lasVegas.png
+   A /layer.py
+   M /movingBackground.py
+   M /tile.py
+
+Added layer support to clean up game.py.
+
+------------------------------------------------------------------------
+r410 | jdolinko | 2013-10-31 22:04:59 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /enemy.py
+   M /game.py
+   M /guard.py
+
+Guards now shoot at you!
+
+------------------------------------------------------------------------
+r409 | sgriffin | 2013-10-31 21:26:19 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Fixed bug in switch sprites load.
+
+------------------------------------------------------------------------
+r408 | mshavit | 2013-10-31 21:23:49 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /levels/level1.tmx
+
+CHECKPOINTSSSSSSS
+
+------------------------------------------------------------------------
+r407 | jrivera | 2013-10-31 21:14:00 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+modified drunkness effect of process keys
+
+------------------------------------------------------------------------
+r406 | sgriffin | 2013-10-31 21:10:35 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /aiAnalyzer.py
+   M /cut.py
+   M /game.py
+   M /gameImage.py
+   M /gameObject.py
+   M /guard.py
+   A /images/__init__.py
+   A /images/imageDict.py
+   A /images/lasVegas.png
+   A /images/losAngeles.png
+   D /levels/losAngeles.png
+   M /levels/tmxParser.py
+   M /movingBackground.py
+   M /player.py
+   M /rivalGuitar.py
+   M /tile.py
+
+Image dict added.
+
+------------------------------------------------------------------------
+r405 | jrivera | 2013-10-31 21:05:09 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /hud.py
+   M /player.py
+
+Fixed maxhp and maxintox problems. handeled in player, not in hud now
+
+------------------------------------------------------------------------
+r404 | coleary | 2013-10-31 20:50:11 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+blink
+
+------------------------------------------------------------------------
+r403 | coleary | 2013-10-31 20:45:41 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /player.py
+
+new blink
+
+------------------------------------------------------------------------
+r402 | coleary | 2013-10-31 20:36:14 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+
+fixed
+
+------------------------------------------------------------------------
+r401 | jdolinko | 2013-10-31 20:34:28 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+
+More attack editing.
+
+------------------------------------------------------------------------
+r400 | coleary | 2013-10-31 20:31:25 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+here you go
+
+------------------------------------------------------------------------
+r399 | coleary | 2013-10-31 20:14:07 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+proper cammel
+
+------------------------------------------------------------------------
+r398 | coleary | 2013-10-31 20:11:20 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /camera.py
+   M /enemy.py
+   M /gameObject.py
+   M /player.py
+   M /tile.py
+
+here
+
+------------------------------------------------------------------------
+r397 | mshavit | 2013-10-31 19:56:45 -0400 (Thu, 31 Oct 2013) | 3 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+   M /levels/tmxParser.py
+
+MULTIPLE properties per tile
+edited tileSheet
+
+------------------------------------------------------------------------
+r396 | jrivera | 2013-10-31 19:44:31 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /camera.py
+   M /game.py
+
+added rotation camera based on intox
+
+------------------------------------------------------------------------
+r395 | jdolinko | 2013-10-31 19:25:46 -0400 (Thu, 31 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+
+Working on some more projectile attacks.
+
+------------------------------------------------------------------------
+r394 | jdolinko | 2013-10-29 21:52:09 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /cut.py
+
+>:(
+
+------------------------------------------------------------------------
+r393 | jdolinko | 2013-10-29 21:49:41 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+
+pep8 nonsense
+
+------------------------------------------------------------------------
+r392 | sgriffin | 2013-10-29 21:47:21 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /camera.py
+   M /cut.py
+   M /game.py
+   M /gameObject.py
+   M /glob.py
+   M /menu.py
+   M /player.py
+
+Cam faster.
+
+------------------------------------------------------------------------
+r391 | sgriffin | 2013-10-29 21:41:28 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /camera.py
+   M /game.py
+
+Smart camera.
+
+------------------------------------------------------------------------
+r390 | jdolinko | 2013-10-29 21:26:23 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+DONE.
+
+------------------------------------------------------------------------
+r389 | mshavit | 2013-10-29 21:19:21 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+something I forget
+
+------------------------------------------------------------------------
+r388 | jdolinko | 2013-10-29 21:15:41 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+BARK
+
+------------------------------------------------------------------------
+r387 | jdolinko | 2013-10-29 21:03:10 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+asdfipjb
+
+------------------------------------------------------------------------
+r386 | sgriffin | 2013-10-29 20:58:36 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+
+Fixed horrid formatting from Cameron in README.
+
+------------------------------------------------------------------------
+r385 | sgriffin | 2013-10-29 20:45:45 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Reduced amount enemies are launched.
+
+------------------------------------------------------------------------
+r384 | sgriffin | 2013-10-29 20:42:44 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Reduced damage back to old value for player.
+
+------------------------------------------------------------------------
+r383 | sgriffin | 2013-10-29 20:38:15 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Reduced force applied to enemies.
+
+------------------------------------------------------------------------
+r382 | sgriffin | 2013-10-29 20:30:08 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /player.py
+
+Fix to camera jiggles.
+
+------------------------------------------------------------------------
+r381 | jdolinko | 2013-10-29 20:28:34 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+hi
+
+------------------------------------------------------------------------
+r380 | mshavit | 2013-10-29 20:25:33 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /gameObject.py
+   M /player.py
+
+Winning stuff now works
+
+------------------------------------------------------------------------
+r379 | coleary | 2013-10-29 20:12:52 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+
+readme
+
+------------------------------------------------------------------------
+r378 | jdolinko | 2013-10-29 20:12:47 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+more level actiony
+
+------------------------------------------------------------------------
+r377 | sgriffin | 2013-10-29 20:09:40 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Die less soon when falling.
+
+------------------------------------------------------------------------
+r376 | jdolinko | 2013-10-29 20:08:20 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+hello
+
+------------------------------------------------------------------------
+r375 | coleary | 2013-10-29 20:06:12 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /menu.py
+
+readme
+
+------------------------------------------------------------------------
+r374 | coleary | 2013-10-29 19:58:17 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /cut.py
+   M /glob.py
+   M /menu.py
+
+space back to enter just for french mike
+
+------------------------------------------------------------------------
+r373 | coleary | 2013-10-29 19:47:26 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /cut.py
+   M /glob.py
+
+ugh
+
+------------------------------------------------------------------------
+r372 | sgriffin | 2013-10-29 19:44:03 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+Update to map.
+
+------------------------------------------------------------------------
+r371 | jrivera | 2013-10-29 19:41:57 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /camera.py
+   M /game.py
+
+Camera has the ability to have an offset . kept it centered for now
+
+------------------------------------------------------------------------
+r370 | sgriffin | 2013-10-29 19:38:13 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+Updated map.
+
+------------------------------------------------------------------------
+r369 | mshavit | 2013-10-29 19:34:23 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+words put back in again
+
+------------------------------------------------------------------------
+r368 | jdolinko | 2013-10-29 19:24:09 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /cut.py
+
+still slow, but works, ignore prev commit
+
+------------------------------------------------------------------------
+r367 | sgriffin | 2013-10-29 19:22:58 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+Added seismic activity.
+
+------------------------------------------------------------------------
+r366 | jdolinko | 2013-10-29 19:22:56 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /cut.py
+
+no longer prints
+
+------------------------------------------------------------------------
+r365 | mshavit | 2013-10-29 19:14:02 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+you can end the level
+
+------------------------------------------------------------------------
+r364 | coleary | 2013-10-29 19:05:06 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /cut.py
+   M /images/newspaper.png
+
+cut is rightish
+
+------------------------------------------------------------------------
+r363 | mshavit | 2013-10-29 19:03:30 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+Multiple enemies spawners on level
+
+------------------------------------------------------------------------
+r362 | mshavit | 2013-10-29 18:35:02 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+YOU FALL YOU DIE
+
+------------------------------------------------------------------------
+r361 | jdolinko | 2013-10-29 18:34:40 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+attack objects and attack collisions all done in checkAtt(dt) now
+
+------------------------------------------------------------------------
+r360 | coleary | 2013-10-29 18:29:02 -0400 (Tue, 29 Oct 2013) | 1 line
+Changed paths:
+   M /cut.py
+
+
+------------------------------------------------------------------------
+r359 | mshavit | 2013-10-29 18:26:57 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+sign change
+
+------------------------------------------------------------------------
+r358 | sgriffin | 2013-10-29 18:25:28 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Fixed draw blitting.
+
+------------------------------------------------------------------------
+r357 | sgriffin | 2013-10-29 18:12:44 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /camera.py
+   M /game.py
+   A /images/guard.png
+
+guard image.
+
+------------------------------------------------------------------------
+r356 | sgriffin | 2013-10-29 16:28:26 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /aiAnalyzer.py
+   M /bandMember.py
+   M /beer.py
+   M /body.py
+   M /camera.py
+   M /cut.py
+   M /deploy.py
+   M /enemySpawner.py
+   M /exit.py
+   M /game.py
+   M /gameImage.py
+   M /gameObject.py
+   M /glob.py
+   M /highScore.py
+   M /hud.py
+   M /item.py
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+   M /main.py
+   M /menu.py
+   M /movingBackground.py
+   M /music.py
+   M /player.py
+   M /state.py
+   M /tile.py
+   M /title.py
+   M /youWin.py
+
+deployment script update and autopep8ing.
+
+------------------------------------------------------------------------
+r355 | sgriffin | 2013-10-29 15:28:48 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /enemySpawner.py
+   A /guard.py
+   A /rivalGuitar.py
+
+Baton guard added. Rival guitarists can't spawn, for now.
+
+------------------------------------------------------------------------
+r354 | jrivera | 2013-10-29 06:16:28 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   A /camera.py
+   M /game.py
+
+Camera skeleton . Does nothing new for the moment
+
+------------------------------------------------------------------------
+r353 | sgriffin | 2013-10-29 00:07:23 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+Fix to escape?
+
+------------------------------------------------------------------------
+r352 | coleary | 2013-10-29 00:04:34 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   M /cut.py
+   A /images/newspaper.png
+
+adds a cut scene
+
+------------------------------------------------------------------------
+r351 | mshavit | 2013-10-29 00:02:31 -0400 (Tue, 29 Oct 2013) | 2 lines
+Changed paths:
+   A /beer.py
+   A /item.py
+   M /levels/level1.tmx
+
+beer stuff
+
+------------------------------------------------------------------------
+r350 | mshavit | 2013-10-28 23:46:55 -0400 (Mon, 28 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameObject.py
+   M /levels/level1.tmx
+   M /player.py
+   M /tile.py
+
+BEEEEEEEEEEER
+
+------------------------------------------------------------------------
+r349 | sgriffin | 2013-10-28 14:47:40 -0400 (Mon, 28 Oct 2013) | 2 lines
+Changed paths:
+   M /deploy.py
+
+Deploy checks for names.
+
+------------------------------------------------------------------------
+r348 | sgriffin | 2013-10-28 14:17:25 -0400 (Mon, 28 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /body.py
+   M /cut.py
+   M /deploy.py
+   M /frameLoader.py
+   M /game.py
+   M /gameObject.py
+   M /hud.py
+   M /levels/tmxParser.py
+   M /main.py
+   M /menu.py
+   M /movingBackground.py
+   M /player.py
+   M /tile.py
+
+deploy script doesn't crash on pep8 fail and is faster.
+
+------------------------------------------------------------------------
+r347 | sgriffin | 2013-10-28 14:01:20 -0400 (Mon, 28 Oct 2013) | 2 lines
+Changed paths:
+   M /exit.py
+   M /main.py
+
+(Perhaps) fix to crash on exit. I can't replicate on my machine, so not sure.
+
+------------------------------------------------------------------------
+r346 | sgriffin | 2013-10-27 00:53:43 -0400 (Sun, 27 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Reverted player jump heights which I committed by accident.
+
+------------------------------------------------------------------------
+r345 | sgriffin | 2013-10-27 00:47:20 -0400 (Sun, 27 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+Bricks.
+
+------------------------------------------------------------------------
+r344 | sgriffin | 2013-10-27 00:12:15 -0400 (Sun, 27 Oct 2013) | 2 lines
+Changed paths:
+   M /cut.py
+   M /glob.py
+   M /main.py
+   M /menu.py
+
+Fixed bizarre and incorrect cut scene coding that destroyed all non-main menus.
+
+------------------------------------------------------------------------
+r343 | sgriffin | 2013-10-26 23:41:49 -0400 (Sat, 26 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /hud.py
+
+Made hud colors slightly less obnoxious.
+
+------------------------------------------------------------------------
+r342 | sgriffin | 2013-10-26 23:29:01 -0400 (Sat, 26 Oct 2013) | 3 lines
+Changed paths:
+   M /README
+   M /body.py
+   M /game.py
+   M /gameObject.py
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+   M /levels/tmxParser.py
+   M /player.py
+   M /tile.py
+
+In-game explanation of controls added. Ability to make certain tiles
+have special collision properties added.
+
+------------------------------------------------------------------------
+r341 | coleary | 2013-10-26 22:31:51 -0400 (Sat, 26 Oct 2013) | 6 lines
+Changed paths:
+   A /cut.py
+   M /glob.py
+   M /main.py
+   M /menu.py
+   M /player.py
+
+I have added a cut scene class called cut.py
+currently it loads before you go to the game,
+it will not work in level select it's currently only loading via menu.py
+all it does right now is say press enter to skip, and then it will skip
+if you hit enter, i assume we will have art for it soon
+
+------------------------------------------------------------------------
+r340 | jdolinko | 2013-10-26 20:28:34 -0400 (Sat, 26 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /hud.py
+   M /player.py
+
+Added intox bar to hud. Hud takes in the player, rather than numbers. Player Desobering changed.
+
+------------------------------------------------------------------------
+r339 | jdolinko | 2013-10-26 19:56:13 -0400 (Sat, 26 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Projectiles are drawn in non-DEBUG mode.
+
+------------------------------------------------------------------------
+r338 | jdolinko | 2013-10-26 19:46:31 -0400 (Sat, 26 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+Projectiles added. Press S to use projectiles! Cooldown rate is 250ms. Cooldown check is in GameObject.
+
+------------------------------------------------------------------------
+r337 | sgriffin | 2013-10-25 03:53:16 -0400 (Fri, 25 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /levels/losAngeles.svg
+   M /player.py
+
+Res added to README. Enemies do more damage (for now).
+
+------------------------------------------------------------------------
+r336 | sgriffin | 2013-10-25 02:35:38 -0400 (Fri, 25 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /enemySpawner.py
+   M /game.py
+   M /gameObject.py
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+   M /levels/tmxParser.py
+
+Aspalt.
+
+------------------------------------------------------------------------
+r335 | sgriffin | 2013-10-25 00:46:59 -0400 (Fri, 25 Oct 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+Fixed crash when selecting level.
+
+------------------------------------------------------------------------
+r334 | sgriffin | 2013-10-24 23:51:11 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameObject.py
+
+Reload sprite positions if resolution has changed.
+
+------------------------------------------------------------------------
+r333 | sgriffin | 2013-10-24 23:28:56 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameImage.py
+   M /glob.py
+   M /levels/level1.tmx
+   M /main.py
+   M /menu.py
+   M /movingBackground.py
+   M /state.py
+
+Added custom resolution support. There's no .txt for it so you'd have to change it either time.
+
+------------------------------------------------------------------------
+r332 | sgriffin | 2013-10-24 21:58:28 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+Added a house. Roof is messed up still.
+
+------------------------------------------------------------------------
+r331 | jrivera | 2013-10-24 21:46:33 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+Refactored attack. No visible difference
+
+------------------------------------------------------------------------
+r330 | sgriffin | 2013-10-24 21:45:43 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /levels/losAngeles.svg
+
+Palm trees.
+
+------------------------------------------------------------------------
+r329 | mshavit | 2013-10-24 21:37:35 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+level fixed
+
+------------------------------------------------------------------------
+r328 | coleary | 2013-10-24 21:33:47 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+
+adds some fudges, removed my enemies not worth it
+
+------------------------------------------------------------------------
+r327 | mshavit | 2013-10-24 21:32:49 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+awefaselj
+
+------------------------------------------------------------------------
+r326 | sgriffin | 2013-10-24 21:31:12 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/losAngeles.png
+
+added player/enemy spawners again.
+
+------------------------------------------------------------------------
+r325 | sgriffin | 2013-10-24 21:27:57 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/losAngeles.png
+
+New massive map.
+
+------------------------------------------------------------------------
+r324 | mshavit | 2013-10-24 20:59:46 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+   M /player.py
+   M /tile.py
+
+non crashing level
+
+------------------------------------------------------------------------
+r323 | sgriffin | 2013-10-24 19:46:41 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /levels/tmxParser.py
+
+Temp bandaid so it doesn't crash.
+
+------------------------------------------------------------------------
+r322 | sgriffin | 2013-10-24 19:33:01 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/objectLayer.png
+
+Another try for obj layer.
+
+------------------------------------------------------------------------
+r321 | sgriffin | 2013-10-24 19:30:09 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/objectLayer.png
+
+Fixed off by one pixel error.
+
+------------------------------------------------------------------------
+r320 | sgriffin | 2013-10-24 19:23:29 -0400 (Thu, 24 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+   A /levels/objectLayer.png
+
+object layer.
+
+------------------------------------------------------------------------
+r319 | mshavit | 2013-10-23 16:46:37 -0400 (Wed, 23 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+Winning stage now done through parsing of the level instead of hardcoded
+
+------------------------------------------------------------------------
+r318 | sgriffin | 2013-10-23 14:27:56 -0400 (Wed, 23 Oct 2013) | 2 lines
+Changed paths:
+   M /frameLoader.py
+   M /game.py
+   M /tile.py
+
+Cleaned up frameLoader a bit.
+
+------------------------------------------------------------------------
+r317 | coleary | 2013-10-22 20:58:47 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /levels/tmxParser.py
+
+some pep8
+
+------------------------------------------------------------------------
+r316 | jrivera | 2013-10-22 20:56:50 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+   M /gameObject.py
+
+enemy swings collide now
+
+------------------------------------------------------------------------
+r315 | sgriffin | 2013-10-22 20:48:10 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+
+typo
+
+------------------------------------------------------------------------
+r314 | mshavit | 2013-10-22 20:42:55 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+   M /tile.py
+
+Some tile parsing changes
+
+------------------------------------------------------------------------
+r313 | coleary | 2013-10-22 20:34:47 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /aiAnalyzer.py
+   M /attack.py
+   M /body.py
+   M /enemy.py
+   M /enemySpawner.py
+   M /frameLoader.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+pep8 and enemies and stuff
+
+------------------------------------------------------------------------
+r312 | sgriffin | 2013-10-22 20:32:03 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /player.py
+
+Slight improvement to look of player attacking.
+
+------------------------------------------------------------------------
+r311 | coleary | 2013-10-22 20:29:11 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /enemy.py
+
+:
+
+------------------------------------------------------------------------
+r310 | jdolinko | 2013-10-22 20:27:23 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+   M /gameObject.py
+
+attacks have a lifetime
+
+------------------------------------------------------------------------
+r309 | sgriffin | 2013-10-22 20:16:54 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /images/rival_guitar.png
+   M /images/rival_guitar_with_attack.png
+
+Enemies have cloaks.
+
+------------------------------------------------------------------------
+r308 | mshavit | 2013-10-22 20:00:39 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /levels/level1.tmx
+
+updated readme
+
+------------------------------------------------------------------------
+r307 | jrivera | 2013-10-22 19:47:59 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+
+Enemies attack animated all the time . not for long though. 
+
+------------------------------------------------------------------------
+r306 | mshavit | 2013-10-22 19:37:39 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   A /sounds/thud.ogg
+
+actually added the sound
+
+------------------------------------------------------------------------
+r305 | mshavit | 2013-10-22 19:36:49 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /music.py
+   D /sounds/thud.wav
+
+sound for hitting/ getting hit update
+
+------------------------------------------------------------------------
+r304 | coleary | 2013-10-22 19:34:44 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /enemy.py
+
+enemies die when they fall off
+
+------------------------------------------------------------------------
+r303 | sgriffin | 2013-10-22 19:10:44 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+deleted commented out code.
+
+------------------------------------------------------------------------
+r302 | mshavit | 2013-10-22 19:10:09 -0400 (Tue, 22 Oct 2013) | 1 line
+Changed paths:
+   M /game.py
+
+
+------------------------------------------------------------------------
+r301 | sgriffin | 2013-10-22 19:08:10 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+   M /game.py
+
+Removed dict and used group instead for enemies.
+
+------------------------------------------------------------------------
+r300 | jrivera | 2013-10-22 19:02:08 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+
+Made attack rect a little more realistic
+
+------------------------------------------------------------------------
+r299 | sgriffin | 2013-10-22 19:01:57 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+fixed typo
+
+------------------------------------------------------------------------
+r298 | sgriffin | 2013-10-22 19:01:20 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+key error.
+
+------------------------------------------------------------------------
+r297 | sgriffin | 2013-10-22 18:56:24 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Deleted commented out code.
+
+------------------------------------------------------------------------
+r296 | sgriffin | 2013-10-22 18:54:18 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.py
+
+Moved attack flag to gameObject
+
+------------------------------------------------------------------------
+r295 | jdolinko | 2013-10-22 18:51:39 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+   M /player.py
+
+Starting on a ranged attack. Flag in player class.
+
+------------------------------------------------------------------------
+r294 | sgriffin | 2013-10-22 18:28:30 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Deleted commented out and added comments.
+
+------------------------------------------------------------------------
+r293 | mshavit | 2013-10-22 18:27:47 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+
+adapted to the new coordinate system
+
+------------------------------------------------------------------------
+r292 | jrivera | 2013-10-22 18:27:36 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+
+Fixed attack rect
+
+------------------------------------------------------------------------
+r291 | sgriffin | 2013-10-22 16:41:26 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   A /images/aiTestTileBothJump.png
+   A /images/aiTestTileLeftJump.png
+   A /images/aiTestTileRightJump.png
+
+Added test tiles for debug mode.
+
+------------------------------------------------------------------------
+r290 | sgriffin | 2013-10-22 16:22:13 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /aiAnalyzer.py
+   M /enemy.py
+   M /game.py
+
+AI work. Debug mode has red stuff.
+
+------------------------------------------------------------------------
+r289 | sgriffin | 2013-10-22 15:44:18 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /frameLoader.py
+
+Attack sprite position hackishly fixed.
+
+------------------------------------------------------------------------
+r288 | sgriffin | 2013-10-22 15:37:40 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /frameLoader.py
+   M /game.py
+   M /gameObject.py
+
+Moving towards decoupling of collision and image.
+
+------------------------------------------------------------------------
+r287 | sgriffin | 2013-10-22 14:47:02 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /frameLoader.py
+   M /gameObject.py
+
+Starting Frame obj.
+
+------------------------------------------------------------------------
+r286 | sgriffin | 2013-10-22 14:40:08 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /gameObject.py
+
+Initial separation of collision rect and sprite rect (so attack animation can be shown without increasing collision rect).
+
+------------------------------------------------------------------------
+r285 | coleary | 2013-10-22 11:37:13 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+
+forces enemies on screen
+
+------------------------------------------------------------------------
+r284 | coleary | 2013-10-22 11:35:13 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /enemySpawner.py
+
+a revert
+
+------------------------------------------------------------------------
+r283 | coleary | 2013-10-22 11:24:18 -0400 (Tue, 22 Oct 2013) | 3 lines
+Changed paths:
+   M /enemySpawner.py
+
+i made it so that spawners don't even work past intialization since they didn't
+work
+
+------------------------------------------------------------------------
+r282 | coleary | 2013-10-22 10:56:24 -0400 (Tue, 22 Oct 2013) | 5 lines
+Changed paths:
+   M /aiAnalyzer.py
+   M /attack.py
+   M /body.py
+   M /enemy.py
+   M /enemySpawner.py
+   M /frameLoader.py
+   M /game.py
+   M /gameObject.py
+   M /highScore.py
+   M /hud.py
+   M /levels/tmxParser.py
+   M /menu.py
+   M /music.py
+   M /player.py
+   M /tile.py
+
+ pep8 properly and fix a minor bug with player jumping due to calling jump wronf in the player class
+has issues with raining enemies from enemy spawners after a few minutes of game play, and those enemies do not have
+collision detection.
+also prematurely submitted
+
+------------------------------------------------------------------------
+r281 | coleary | 2013-10-22 09:52:25 -0400 (Tue, 22 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+makes the enemy jump when hit
+
+------------------------------------------------------------------------
+r280 | coleary | 2013-10-21 21:40:26 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /enemy.py
+
+adding enemys getting hit
+
+------------------------------------------------------------------------
+r279 | sgriffin | 2013-10-21 19:43:15 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Rudimentary ai.
+
+------------------------------------------------------------------------
+r278 | sgriffin | 2013-10-21 19:29:23 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /tile.py
+
+Removed playerPosition arguments made useless by new coord sys.
+
+------------------------------------------------------------------------
+r277 | sgriffin | 2013-10-21 19:24:19 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameObject.py
+   M /tile.py
+
+The return of the fudge.
+
+------------------------------------------------------------------------
+r276 | sgriffin | 2013-10-21 18:11:00 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /tile.py
+
+tile caching.
+
+------------------------------------------------------------------------
+r275 | sgriffin | 2013-10-21 17:45:43 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+   M /tile.py
+
+Fixes to coordinates. Vertical collisions still messed up.
+
+------------------------------------------------------------------------
+r274 | mshavit | 2013-10-21 17:31:25 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+   M /game.py
+
+enemy spawners added back
+
+------------------------------------------------------------------------
+r273 | jdolinko | 2013-10-21 16:51:58 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Whoever removed the player/enemy collision, shame on you.
+
+------------------------------------------------------------------------
+r272 | sgriffin | 2013-10-21 16:50:24 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /body.py
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+   M /tile.py
+
+Major coordinate fixes.
+
+------------------------------------------------------------------------
+r271 | coleary | 2013-10-21 16:39:33 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /highScore.py
+
+minor fix for highScore to make final highScore 0
+
+------------------------------------------------------------------------
+r270 | coleary | 2013-10-21 16:07:37 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+
+figured out the time problem also made enemies appear spread out in the first frame of the game
+
+------------------------------------------------------------------------
+r269 | coleary | 2013-10-21 15:26:05 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+added a few lines to enemy to try and properly implement the invunreability. i ran in to some issues with pygame seeming to go fast as far as clock time
+
+------------------------------------------------------------------------
+r268 | sgriffin | 2013-10-21 13:57:30 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+Removed screenWidth/Height from constructors.
+
+------------------------------------------------------------------------
+r267 | sgriffin | 2013-10-21 02:26:26 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /enemy.py
+
+Reverted updatePositionY.
+
+------------------------------------------------------------------------
+r266 | sgriffin | 2013-10-21 02:12:31 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+
+Enemies pseudorandomly follow player.
+
+------------------------------------------------------------------------
+r265 | sgriffin | 2013-10-21 01:41:16 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Removed constant jumping for now.
+
+------------------------------------------------------------------------
+r264 | sgriffin | 2013-10-21 01:39:09 -0400 (Mon, 21 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Fixed enemy widths to 50 instead of 30.
+
+------------------------------------------------------------------------
+r263 | sgriffin | 2013-10-20 21:52:22 -0400 (Sun, 20 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+
+Another rewrite of collision resolution... still not quite right for enemies.
+
+------------------------------------------------------------------------
+r262 | sgriffin | 2013-10-20 19:21:52 -0400 (Sun, 20 Oct 2013) | 2 lines
+Changed paths:
+   A /aiAnalyzer.py
+
+aiAnalyzer for determining nodes for ai to follow added.
+
+------------------------------------------------------------------------
+r261 | sgriffin | 2013-10-20 06:23:44 -0400 (Sun, 20 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /highScore.py
+   M /levels/tmxParser.py
+   M /main.py
+
+Removed print statements.
+
+------------------------------------------------------------------------
+r260 | sgriffin | 2013-10-20 06:16:49 -0400 (Sun, 20 Oct 2013) | 3 lines
+Changed paths:
+   M /body.py
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /guitarist_nonstandardized.svg
+   M /player.py
+   M /tile.py
+
+Collision and AI changes. Lots of merge conflicts fixed, so there might
+be something missing...
+
+------------------------------------------------------------------------
+r259 | mshavit | 2013-10-18 21:31:50 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+
+multiple enemy spawners!!
+
+------------------------------------------------------------------------
+r258 | jrivera | 2013-10-18 19:57:04 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /frameLoader.py
+   M /gameObject.py
+   M /player.py
+
+Attack animation. sorta
+
+------------------------------------------------------------------------
+r257 | jdolinko | 2013-10-18 19:38:46 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+
+width/height fix for enemy creation
+
+------------------------------------------------------------------------
+r256 | jdolinko | 2013-10-18 19:31:40 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+
+Removed print statements.
+
+------------------------------------------------------------------------
+r255 | jdolinko | 2013-10-18 19:30:12 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+
+Spawner fix.
+
+------------------------------------------------------------------------
+r254 | mshavit | 2013-10-18 19:26:10 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+fasefas
+
+------------------------------------------------------------------------
+r253 | jdolinko | 2013-10-18 19:23:15 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+   M /game.py
+
+EnemySpawner does something!?
+
+------------------------------------------------------------------------
+r252 | mshavit | 2013-10-18 19:07:01 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+
+enemy spawner logic in game.py
+
+------------------------------------------------------------------------
+r251 | jdolinko | 2013-10-18 19:01:55 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemySpawner.py
+
+more junk on enemy spawner
+
+------------------------------------------------------------------------
+r250 | jdolinko | 2013-10-18 18:50:11 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   A /enemySpawner.py
+
+EnemySpawner starting nonsense.
+
+------------------------------------------------------------------------
+r249 | mshavit | 2013-10-18 18:32:11 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+just some enemy spawners on the level, no actual enemy spanwer yet
+
+------------------------------------------------------------------------
+r248 | mshavit | 2013-10-18 18:30:41 -0400 (Fri, 18 Oct 2013) | 5 lines
+Changed paths:
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+
+we can have mulitple levels now !!!! (as far as player spawning goes)
+Parser parses objects from the objectlayer (such as player/enemy spawner)
+game.py sets the player spawn based on parsed objects
+
+
+------------------------------------------------------------------------
+r247 | jdolinko | 2013-10-18 18:07:03 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+
+Semi-alpha hitbox for now
+
+------------------------------------------------------------------------
+r246 | jdolinko | 2013-10-18 17:39:26 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /enemy.py
+   M /music.py
+
+Enemy invul tweaking
+
+------------------------------------------------------------------------
+r245 | sgriffin | 2013-10-18 17:36:28 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   A /images/rival_guitar_with_attack.png
+
+Rival.
+
+------------------------------------------------------------------------
+r244 | mshavit | 2013-10-18 17:16:29 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+
+work in progress on the parser/level to have multiple levels
+
+------------------------------------------------------------------------
+r243 | jdolinko | 2013-10-18 17:08:13 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /player.py
+
+No more annoying thud when you hit walls
+
+------------------------------------------------------------------------
+r242 | jdolinko | 2013-10-18 17:01:12 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /music.py
+   M /player.py
+
+Enemies can damage player.
+
+------------------------------------------------------------------------
+r241 | sgriffin | 2013-10-18 16:56:51 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   A /images/guitar_with_attack.png
+   D /images/guitar_withattack.png
+
+Fixed guitar image.
+
+------------------------------------------------------------------------
+r240 | jrivera | 2013-10-18 16:45:22 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /frameLoader.py
+
+Name corrections. Rivera not Riviera
+
+------------------------------------------------------------------------
+r239 | sgriffin | 2013-10-18 16:34:18 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   A /images/guitar_withattack.png
+
+New guitarist sprite.
+
+------------------------------------------------------------------------
+r238 | mshavit | 2013-10-18 16:30:24 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /levels/losAngeles.png
+   M /levels/losAngeles.svg
+
+smaller level, much faster loading time
+
+------------------------------------------------------------------------
+r237 | jdolinko | 2013-10-18 15:41:11 -0400 (Fri, 18 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+
+Preliminary attack collisions
+
+------------------------------------------------------------------------
+r236 | jrivera | 2013-10-17 21:44:48 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /attack.py
+   M /game.py
+
+Fixed the initialization bug. i think. doesn't happen on my comp
+
+------------------------------------------------------------------------
+r235 | jrivera | 2013-10-17 21:25:02 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   A /attack.py
+   M /game.py
+   M /gameObject.py
+   M /hud.py
+   M /player.py
+
+Added a kinda working attack. visually
+
+------------------------------------------------------------------------
+r234 | coleary | 2013-10-17 21:06:01 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /glob.py
+   M /highScore.py
+   M /main.py
+   M /menu.py
+   M /player.py
+   M /youWin.py
+
+autopep8 commit as well as editions to highScore and README vis a vis the assignment
+
+------------------------------------------------------------------------
+r233 | sgriffin | 2013-10-17 20:54:03 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   A /levels/losAngeles.svg
+
+SVG of tilesheet.
+
+------------------------------------------------------------------------
+r232 | mshavit | 2013-10-17 20:29:37 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   D /highscores.txt
+
+fix conflict with highscores, updated names
+
+------------------------------------------------------------------------
+r231 | coleary | 2013-10-17 20:25:45 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   A /highscores.txt
+
+gives a high score file
+
+------------------------------------------------------------------------
+r230 | mshavit | 2013-10-17 20:21:32 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /main.py
+
+Level Select Menu!!
+
+------------------------------------------------------------------------
+r229 | coleary | 2013-10-17 20:10:47 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /highScore.py
+
+has an error message if you try and hit enter without entering a name
+
+------------------------------------------------------------------------
+r228 | mshavit | 2013-10-17 19:49:48 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /main.py
+   M /menu.py
+   M /player.py
+
+mid progress commit - level select WIP
+
+------------------------------------------------------------------------
+r227 | coleary | 2013-10-17 19:46:01 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /main.py
+   M /youWin.py
+
+adds winning and losing and highscores properly done
+
+------------------------------------------------------------------------
+r226 | coleary | 2013-10-17 19:21:03 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /main.py
+
+highscores is totally awesome now
+
+------------------------------------------------------------------------
+r225 | coleary | 2013-10-17 18:22:34 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /highScore.py
+
+working highscore module
+
+------------------------------------------------------------------------
+r224 | coleary | 2013-10-17 18:17:07 -0400 (Thu, 17 Oct 2013) | 2 lines
+Changed paths:
+   M /highScore.py
+   M /player.py
+
+fixed some highscore problemsX
+
+------------------------------------------------------------------------
+r223 | jdolinko | 2013-10-16 16:56:59 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /main.py
+   M /player.py
+   M /state.py
+
+Actually input score at end of level, fix names in some files
+
+------------------------------------------------------------------------
+r222 | jrivera | 2013-10-16 16:53:49 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /hud.py
+
+Minor change to variables
+
+------------------------------------------------------------------------
+r221 | jdolinko | 2013-10-16 16:47:51 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+
+Points increase on enemy death
+
+------------------------------------------------------------------------
+r220 | mshavit | 2013-10-16 16:44:25 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+small merging for drunk effect
+
+------------------------------------------------------------------------
+r219 | jdolinko | 2013-10-16 15:33:33 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /main.py
+   A /youWin.py
+
+Hacky "win" state when you reach the end of our level. Could be retooled later for cutscenes?
+
+------------------------------------------------------------------------
+r218 | sgriffin | 2013-10-16 01:30:59 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/__init__.py
+   M /levels/tmxParser.py
+
+Added names.
+
+------------------------------------------------------------------------
+r217 | sgriffin | 2013-10-16 01:26:31 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /deploy.py
+   M /glob.py
+   M /highScore.py
+
+Added names to deploy.py. autopep8.
+
+------------------------------------------------------------------------
+r216 | sgriffin | 2013-10-16 01:16:31 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /deploy.py
+
+Update to deploy script.
+
+------------------------------------------------------------------------
+r215 | sgriffin | 2013-10-16 01:08:21 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /deploy.py
+
+Deploy fixes.
+
+------------------------------------------------------------------------
+r214 | sgriffin | 2013-10-16 00:25:14 -0400 (Wed, 16 Oct 2013) | 2 lines
+Changed paths:
+   A /deploy.py
+
+Added deploy script
+
+------------------------------------------------------------------------
+r213 | coleary | 2013-10-15 20:07:03 -0400 (Tue, 15 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /game.py
+   M /gameImage.py
+   M /gameObject.py
+   M /highScore.py
+   M /hud.py
+   M /player.py
+   M /tile.py
+
+all pep8 and fix of highscore, trying to add backspace before commitX
+
+------------------------------------------------------------------------
+r212 | coleary | 2013-10-15 18:58:44 -0400 (Tue, 15 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /highScore.py
+
+adds highscore moduel
+
+------------------------------------------------------------------------
+r211 | sgriffin | 2013-10-15 18:50:06 -0400 (Tue, 15 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Removed a useless import that the TAs might not have.
+
+------------------------------------------------------------------------
+r210 | coleary | 2013-10-14 16:38:34 -0400 (Mon, 14 Oct 2013) | 4 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /highScore.py
+   M /player.py
+
+you have health you lose some of  it when you fall to your death, 
+some highscore background stuff not yet finished, need user input added
+deleted about 10 liens of useless code foudn whilst porowsing
+
+------------------------------------------------------------------------
+r209 | sgriffin | 2013-10-13 07:20:32 -0400 (Sun, 13 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /game.py
+
+Updated readme, verbosified a comment.
+
+------------------------------------------------------------------------
+r208 | jrivera | 2013-10-12 18:26:36 -0400 (Sat, 12 Oct 2013) | 2 lines
+Changed paths:
+   M /hud.py
+   M /player.py
+
+Drinking now gives you health for fun (press d). fixed hud a bit
+
+------------------------------------------------------------------------
+r207 | sgriffin | 2013-10-11 23:03:43 -0400 (Fri, 11 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameImage.py
+   M /tile.py
+
+Minor formatting changes.
+
+------------------------------------------------------------------------
+r206 | sgriffin | 2013-10-11 02:39:18 -0400 (Fri, 11 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /levels/tmxParser.py
+   M /main.py
+   M /tile.py
+
+Removed enemy respawning. Collision with tiles changed to hash-based approach. It's not much faster yet, but it will be...
+
+------------------------------------------------------------------------
+r205 | jrivera | 2013-10-10 21:40:19 -0400 (Thu, 10 Oct 2013) | 4 lines
+Changed paths:
+   M /game.py
+   M /gameObject.py
+   M /glob.py
+   A /hud.py
+
+Added in the drawing of score. Nothing modifies it so it doesn't change
+Added in drawing of hp. HP currently set to 80/100 
+hp is currently in gameObject
+
+------------------------------------------------------------------------
+r204 | sgriffin | 2013-10-10 20:43:07 -0400 (Thu, 10 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Deleted some comments.
+
+------------------------------------------------------------------------
+r203 | mshavit | 2013-10-10 20:30:59 -0400 (Thu, 10 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /player.py
+
+DRINK DRINK DRINK DRINK DRINK, oh no, game is too hard, shouldn't have had that many drinks
+
+------------------------------------------------------------------------
+r202 | sgriffin | 2013-10-10 20:14:48 -0400 (Thu, 10 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Changed background to work.
+
+------------------------------------------------------------------------
+r201 | jdolinko | 2013-10-10 20:13:38 -0400 (Thu, 10 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+PRECISION PLATFORMING~
+
+------------------------------------------------------------------------
+r200 | jrivera | 2013-10-10 19:32:09 -0400 (Thu, 10 Oct 2013) | 2 lines
+Changed paths:
+   M /bandMember.py
+   M /player.py
+
+Alternate player jumps higher
+
+------------------------------------------------------------------------
+r199 | sgriffin | 2013-10-10 19:00:50 -0400 (Thu, 10 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameImage.py
+   M /gameObject.py
+   M /main.py
+   M /player.py
+
+Making attack jump work.
+
+------------------------------------------------------------------------
+r198 | jdolinko | 2013-10-10 18:35:02 -0400 (Thu, 10 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+New level for testing
+
+------------------------------------------------------------------------
+r197 | sgriffin | 2013-10-07 20:35:10 -0400 (Mon, 07 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/tmxParser.py
+
+Pep8...
+
+------------------------------------------------------------------------
+r196 | sgriffin | 2013-10-07 20:28:19 -0400 (Mon, 07 Oct 2013) | 2 lines
+Changed paths:
+   D /__init__.py
+   M /bandMember.py
+   M /body.py
+   M /enemy.py
+   M /frameLoader.py
+   M /game.py
+   M /gameObject.py
+   M /glob.py
+   M /highScore.py
+   D /levels/level.tmx
+   M /main.py
+   M /music.py
+   M /player.py
+   M /tile.py
+
+Pep8ing.
+
+------------------------------------------------------------------------
+r195 | sgriffin | 2013-10-07 15:22:12 -0400 (Mon, 07 Oct 2013) | 4 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameObject.py
+   M /levels/level1.tmx
+   M /tile.py
+
+Added actual collision resolution.
+The jumping and collidedY = 0 need to be fixed,
+until then there's a fudge.
+
+------------------------------------------------------------------------
+r194 | sgriffin | 2013-10-07 03:56:28 -0400 (Mon, 07 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+Changed lower platform to hide the enemy collision bug for the presentation.
+
+------------------------------------------------------------------------
+r193 | sgriffin | 2013-10-06 23:49:47 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Old physics added back, commented.
+
+------------------------------------------------------------------------
+r192 | sgriffin | 2013-10-06 23:21:29 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Only reset jump animation at start of jump.
+
+------------------------------------------------------------------------
+r191 | sgriffin | 2013-10-06 22:44:21 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+enemy id
+
+------------------------------------------------------------------------
+r190 | sgriffin | 2013-10-06 22:43:55 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.py
+
+Fixed jump
+
+------------------------------------------------------------------------
+r189 | mshavit | 2013-10-06 22:34:44 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /enemy.py
+   M /game.py
+   M /player.py
+
+Attack working again, much cleaner too
+
+------------------------------------------------------------------------
+r188 | sgriffin | 2013-10-06 22:26:40 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /enemy.py
+   M /gameObject.py
+   M /player.py
+
+Enemy respawns changed.
+
+------------------------------------------------------------------------
+r187 | jdolinko | 2013-10-06 22:11:35 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+BUGS ARE WEIRD AS HELL
+
+------------------------------------------------------------------------
+r186 | jrivera | 2013-10-06 21:49:41 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Fixed enemey/player height
+
+------------------------------------------------------------------------
+r185 | mshavit | 2013-10-06 21:45:55 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+jump animation timing elongated
+
+------------------------------------------------------------------------
+r184 | sgriffin | 2013-10-06 21:29:42 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /images/rival_guitar.png
+
+Enemy sprite.
+
+------------------------------------------------------------------------
+r183 | sgriffin | 2013-10-06 21:22:31 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /guitarist_nonstandardized.svg
+   M /images/guitar.png
+
+Changed spritesheet.
+
+------------------------------------------------------------------------
+r182 | mshavit | 2013-10-06 21:19:04 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+logic update for jump animation
+
+------------------------------------------------------------------------
+r181 | sgriffin | 2013-10-06 21:16:36 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /guitarist_nonstandardized.svg
+   M /images/guitar.png
+
+New guitar image.
+
+------------------------------------------------------------------------
+r180 | coleary | 2013-10-06 21:14:56 -0400 (Sun, 06 Oct 2013) | 3 lines
+Changed paths:
+   M /body.py
+   M /game.py
+
+fixes enemies
+
+
+------------------------------------------------------------------------
+r179 | jdolinko | 2013-10-06 21:02:36 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /frameLoader.py
+   M /game.py
+
+Animation frames include jumps (imagesheet TBD)
+
+------------------------------------------------------------------------
+r178 | mshavit | 2013-10-06 20:56:54 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /gameObject.py
+
+setting logic for jump sprite in gameObject
+
+------------------------------------------------------------------------
+r177 | sgriffin | 2013-10-06 20:54:15 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /guitarist_nonstandardized.svg
+   M /images/guitar.png
+
+New player spritesheet.
+
+------------------------------------------------------------------------
+r176 | mshavit | 2013-10-06 20:48:30 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+type strings in player/enemy
+
+------------------------------------------------------------------------
+r175 | sgriffin | 2013-10-06 20:33:53 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /guitarist_nonstandardized.svg
+   M /images/guitar.png
+   M /player.py
+
+New player.
+
+------------------------------------------------------------------------
+r174 | jrivera | 2013-10-06 20:25:04 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+fixed some band member initialization
+
+------------------------------------------------------------------------
+r173 | coleary | 2013-10-06 20:20:18 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /glob.py
+
+adds highscore changing
+
+------------------------------------------------------------------------
+r172 | mshavit | 2013-10-06 19:51:56 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+unfroze enemies
+
+------------------------------------------------------------------------
+r171 | sgriffin | 2013-10-06 05:57:57 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /gameObject.py
+
+Fudgy fix to collision using four rects instead of ifs. It seems to work...
+
+------------------------------------------------------------------------
+r170 | sgriffin | 2013-10-06 03:44:53 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   D /levels/levelPlaceholder.png
+   D /levels/tutorialtiles2.png
+
+Made level match the assignment.
+
+------------------------------------------------------------------------
+r169 | sgriffin | 2013-10-06 00:19:59 -0400 (Sun, 06 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+   M /tile.py
+
+Only draw and update stuff on screen. (Performance improvements.)
+
+------------------------------------------------------------------------
+r168 | jdolinko | 2013-10-05 18:12:47 -0400 (Sat, 05 Oct 2013) | 2 lines
+Changed paths:
+   M /music.py
+
+Messing with audio levels
+
+------------------------------------------------------------------------
+r167 | jdolinko | 2013-10-05 17:54:52 -0400 (Sat, 05 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.py
+
+Moved player switch to processKeys(), added switching flag
+
+------------------------------------------------------------------------
+r166 | mshavit | 2013-10-05 15:44:14 -0400 (Sat, 05 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+
+I've added respawning, and I believe it should work once we can actually fall through
+
+------------------------------------------------------------------------
+r165 | mshavit | 2013-10-05 14:59:46 -0400 (Sat, 05 Oct 2013) | 3 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameObject.py
+   M /main.py
+
+Collisions with platforms/walls finnally working correctly.
+
+
+------------------------------------------------------------------------
+r164 | sgriffin | 2013-10-05 04:27:33 -0400 (Sat, 05 Oct 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /glob.py
+   M /levels/level1.tmx
+   M /player.py
+   M /tile.py
+
+Scrolling.
+
+------------------------------------------------------------------------
+r163 | jdolinko | 2013-10-03 22:28:47 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /music.py
+   M /sounds/audioprac1.ogg
+   M /sounds/audioprac2.ogg
+
+Changed music for 4 channels, one for each instrument.
+
+------------------------------------------------------------------------
+r162 | jdolinko | 2013-10-03 21:28:38 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /music.py
+
+Music pauses and unpauses from game to the menu state.
+
+------------------------------------------------------------------------
+r161 | jdolinko | 2013-10-03 21:14:41 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   A /music.py
+   M /player.py
+   A /sounds/audioprac1.ogg
+   A /sounds/audioprac2.ogg
+
+SOUNDS CHANGE! WOAHHHHH
+
+------------------------------------------------------------------------
+r160 | sgriffin | 2013-10-03 20:44:43 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /menu.py
+
+Removed keyEvent processing in menu.
+
+------------------------------------------------------------------------
+r159 | sgriffin | 2013-10-03 20:44:17 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+   M /menu.py
+   M /state.py
+
+Menu switched to keydown.
+
+------------------------------------------------------------------------
+r158 | mshavit | 2013-10-03 20:37:27 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+
+No longer falling through ground. 
+
+------------------------------------------------------------------------
+r157 | coleary | 2013-10-03 20:36:41 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /glob.py
+   M /highScore.py
+
+adds highscores that can also read and write to the list not fully implimented until we have a dead or save point
+
+------------------------------------------------------------------------
+r156 | sgriffin | 2013-10-03 20:34:24 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/level1.tmx
+
+Peter's arrangement.
+
+------------------------------------------------------------------------
+r155 | jrivera | 2013-10-03 20:32:56 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /bandMember.py
+   M /game.py
+   M /main.py
+   M /player.py
+
+Fixed the player switching to a keyup rather than keydown press
+
+------------------------------------------------------------------------
+r154 | sgriffin | 2013-10-03 20:14:02 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   A /levels/levelPlaceholder.png
+   A /levels/losAngeles.png
+
+Tiles2.
+
+------------------------------------------------------------------------
+r153 | sgriffin | 2013-10-03 20:13:05 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /levels/level1.tmx
+   M /levels/tmxParser.py
+   M /tile.py
+
+Tile.
+
+------------------------------------------------------------------------
+r152 | mshavit | 2013-10-03 19:39:19 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /gameObject.py
+   M /main.py
+
+close to perfect platform collisions
+
+------------------------------------------------------------------------
+r151 | mshavit | 2013-10-03 19:32:03 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /gameObject.py
+
+better working collision
+
+------------------------------------------------------------------------
+r150 | mshavit | 2013-10-03 18:54:19 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+
+Semi-Working platform collision
+
+------------------------------------------------------------------------
+r149 | sgriffin | 2013-10-03 18:17:26 -0400 (Thu, 03 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /game.py
+   M /glob.py
+   M /main.py
+
+Tiles.
+
+------------------------------------------------------------------------
+r148 | sgriffin | 2013-10-02 18:04:54 -0400 (Wed, 02 Oct 2013) | 2 lines
+Changed paths:
+   M /README
+   M /levels/tmxParser.py
+
+pep8 of tmxParser.py and added esc to README.
+
+------------------------------------------------------------------------
+r147 | sgriffin | 2013-10-02 17:02:26 -0400 (Wed, 02 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+"Collision"
+
+------------------------------------------------------------------------
+r146 | sgriffin | 2013-10-02 16:44:17 -0400 (Wed, 02 Oct 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /levels/tmxParser.py
+
+Parsing, physics.
+
+------------------------------------------------------------------------
+r145 | sgriffin | 2013-10-02 16:36:08 -0400 (Wed, 02 Oct 2013) | 2 lines
+Changed paths:
+   A /levels/level1.tmx
+
+level1
+
+------------------------------------------------------------------------
+r144 | sgriffin | 2013-10-01 21:46:24 -0400 (Tue, 01 Oct 2013) | 2 lines
+Changed paths:
+   A /__init__.py
+   M /game.py
+   M /levels/tmxParser.py
+   D /levels/tutorialtiles.png
+   A /levels/tutorialtiles2.png
+   M /tile.py
+
+Working tiles.
+
+------------------------------------------------------------------------
+r143 | jrivera | 2013-10-01 21:12:24 -0400 (Tue, 01 Oct 2013) | 3 lines
+Changed paths:
+   A /bandMember.py
+   M /player.py
+
+Added an object to contain band member variables. again, press shift
+to change characters
+
+------------------------------------------------------------------------
+r142 | jrivera | 2013-10-01 20:30:03 -0400 (Tue, 01 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /player.py
+
+Added player switching. press right shift to switch
+
+------------------------------------------------------------------------
+r141 | jdolinko | 2013-10-01 20:15:36 -0400 (Tue, 01 Oct 2013) | 2 lines
+Changed paths:
+   A /tile.py
+
+Tile image parser
+
+------------------------------------------------------------------------
+r140 | sgriffin | 2013-10-01 19:51:29 -0400 (Tue, 01 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/tmxParser.py
+
+Only print some stuff.
+
+------------------------------------------------------------------------
+r139 | sgriffin | 2013-10-01 19:48:33 -0400 (Tue, 01 Oct 2013) | 2 lines
+Changed paths:
+   M /levels/tmxParser.py
+
+source
+
+------------------------------------------------------------------------
+r138 | sgriffin | 2013-10-01 19:34:01 -0400 (Tue, 01 Oct 2013) | 2 lines
+Changed paths:
+   M /game.py
+   A /levels
+   A /levels/__init__.py
+   A /levels/level.tmx
+   A /levels/tmxParser.py
+   A /levels/tutorialtiles.png
+
+.tmx parsing.
+
+------------------------------------------------------------------------
+r137 | sgriffin | 2013-10-01 18:11:14 -0400 (Tue, 01 Oct 2013) | 2 lines
+Changed paths:
+   M /glob.py
+
+glob size
+
+------------------------------------------------------------------------
+r136 | jdolinko | 2013-10-01 18:07:58 -0400 (Tue, 01 Oct 2013) | 1 line
+Changed paths:
+   M /body.py
+
+
+------------------------------------------------------------------------
+r135 | sgriffin | 2013-09-30 21:41:20 -0400 (Mon, 30 Sep 2013) | 2 lines
+Changed paths:
+   M /README
+
+README changes.
+
+------------------------------------------------------------------------
+r134 | sgriffin | 2013-09-30 19:41:53 -0400 (Mon, 30 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /player.py
+   D /thud.wav
+
+Collision sound "fixed" from my body.py refactor. It plays twice sometimes now... not a big deal for this assignment.
+
+------------------------------------------------------------------------
+r133 | sgriffin | 2013-09-30 19:30:44 -0400 (Mon, 30 Sep 2013) | 2 lines
+Changed paths:
+   M /body.py
+   M /game.py
+   M /gameObject.py
+
+pep8ed.
+
+------------------------------------------------------------------------
+r132 | sgriffin | 2013-09-30 17:12:20 -0400 (Mon, 30 Sep 2013) | 2 lines
+Changed paths:
+   A /body.py
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /main.py
+   M /player.py
+
+Physics moved into body.py because gameObject.py was getting big. We should try to force any physics stuff in there.
+
+------------------------------------------------------------------------
+r131 | sgriffin | 2013-09-29 23:25:18 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /movingBackground.py
+
+Pep8ing.
+
+------------------------------------------------------------------------
+r130 | sgriffin | 2013-09-29 23:21:19 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   D /background1_roughlight2.png
+   D /better_thud.wma
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   D /guitar.png
+   A /images
+   A /images/background1_roughlight2.png
+   A /images/guitar.png
+   A /images/rival_guitar.png
+   M /movingBackground.py
+   M /player.py
+   D /rival_guitar.png
+   A /sounds
+   A /sounds/thud.wav
+
+Organized media into folders.
+
+------------------------------------------------------------------------
+r129 | sgriffin | 2013-09-29 23:11:13 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   M /highScore.py
+   M /menu.py
+   A /movingBackground.py
+   M /title.py
+
+Moving backgrounds for everyone. Font sizes fixed.
+
+------------------------------------------------------------------------
+r128 | sgriffin | 2013-09-29 22:51:42 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   M /title.py
+
+Custom font to show non-laziness.
+
+------------------------------------------------------------------------
+r127 | sgriffin | 2013-09-29 22:50:01 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   A /fonts
+   A /fonts/CHINESER.TTF
+   A /fonts/Latine.ttf
+
+fonts
+
+------------------------------------------------------------------------
+r126 | sgriffin | 2013-09-29 22:47:54 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   M /main.py
+
+Added support for custom font.
+
+------------------------------------------------------------------------
+r125 | sgriffin | 2013-09-29 22:38:08 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /title.py
+
+pep8 of title.
+
+------------------------------------------------------------------------
+r124 | sgriffin | 2013-09-29 22:37:05 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /title.py
+
+Animation and pep8.
+
+------------------------------------------------------------------------
+r123 | sgriffin | 2013-09-29 22:24:20 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /exit.py
+   M /frameLoader.py
+   M /game.py
+   M /gameImage.py
+   M /gameObject.py
+   M /glob.py
+   M /highScore.py
+   M /main.py
+   M /menu.py
+   M /player.py
+   M /state.py
+   M /title.py
+
+Pep8 fixes.
+
+------------------------------------------------------------------------
+r122 | sgriffin | 2013-09-29 21:57:36 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /title.py
+
+Blink
+
+------------------------------------------------------------------------
+r121 | sgriffin | 2013-09-29 21:53:43 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   A /title.py
+
+Title
+
+------------------------------------------------------------------------
+r120 | sgriffin | 2013-09-29 21:51:02 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /background1_roughlight2.png
+   M /glob.py
+   M /main.py
+
+Basic title screen.
+
+------------------------------------------------------------------------
+r119 | sgriffin | 2013-09-29 21:26:08 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /main.py
+   M /rival_guitar.png
+
+Fixed bug in main.py. Updated enemy placeholder.
+
+------------------------------------------------------------------------
+r118 | sgriffin | 2013-09-29 21:13:38 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Pressing enter from game reverted to go to menu.
+
+------------------------------------------------------------------------
+r117 | jdolinko | 2013-09-29 21:07:17 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /highScore.py
+
+HighScore displays both names and scores.
+
+------------------------------------------------------------------------
+r116 | sgriffin | 2013-09-29 20:52:57 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /README
+   M /state.py
+
+Deleted a commented out line of code. Updated README.
+
+------------------------------------------------------------------------
+r115 | sgriffin | 2013-09-29 20:44:50 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /player.py
+
+Adding boilerplate and removing unused things in player and gameObject.
+
+------------------------------------------------------------------------
+r114 | sgriffin | 2013-09-29 20:39:54 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   D /HighScore.py
+   M /glob.py
+   A /highScore.py
+   M /main.py
+   M /menu.py
+
+Removed deadweight.
+
+------------------------------------------------------------------------
+r113 | jdolinko | 2013-09-29 20:31:47 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   A /HighScore.py
+   M /game.py
+   M /glob.py
+   M /main.py
+   M /menu.py
+
+Semi-working High Scores
+
+------------------------------------------------------------------------
+r112 | sgriffin | 2013-09-29 20:18:17 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+
+Fixed weirdnesses with enemy animation.
+
+------------------------------------------------------------------------
+r111 | sgriffin | 2013-09-29 20:14:24 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Removed deadweight in gameObject.
+
+------------------------------------------------------------------------
+r110 | sgriffin | 2013-09-29 20:11:44 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+   D /guitarist_small.png
+   M /player.py
+   A /rival_guitar.png
+   D /rival_guitarist_small.png
+
+Initial enemy animation. Still a bit weird. Placeholder spritesheet.
+
+------------------------------------------------------------------------
+r109 | jrivera | 2013-09-29 19:53:00 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   M /main.py
+   M /menu.py
+
+Added a fake little highscore screen
+
+------------------------------------------------------------------------
+r108 | sgriffin | 2013-09-29 19:43:24 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /main.py
+   M /menu.py
+
+Comments added in main and menu.
+
+------------------------------------------------------------------------
+r107 | sgriffin | 2013-09-29 04:15:20 -0400 (Sun, 29 Sep 2013) | 2 lines
+Changed paths:
+   M /frameLoader.py
+   M /player.py
+
+Refactored my useless object orientation in frameLoader.py
+
+------------------------------------------------------------------------
+r106 | sgriffin | 2013-09-27 16:55:22 -0400 (Fri, 27 Sep 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Removed unused variables in player.py.
+
+------------------------------------------------------------------------
+r105 | sgriffin | 2013-09-27 16:46:12 -0400 (Fri, 27 Sep 2013) | 2 lines
+Changed paths:
+   A /frameLoader.py
+   M /gameObject.py
+   M /guitar.png
+   M /guitarist_nonstandardized.svg
+   M /player.py
+
+Player sprite fixed when going backwards. Frame loading refactored into new class.
+
+------------------------------------------------------------------------
+r104 | sgriffin | 2013-09-27 15:28:19 -0400 (Fri, 27 Sep 2013) | 2 lines
+Changed paths:
+   M /state.py
+
+minTimeAlive in state.py reduced to make menus a bit less sluggish.
+
+------------------------------------------------------------------------
+r103 | sgriffin | 2013-09-27 15:25:35 -0400 (Fri, 27 Sep 2013) | 2 lines
+Changed paths:
+   A /background1_roughlight2.png
+   M /exit.py
+   M /game.py
+   M /gameImage.py
+   M /gameObject.py
+   M /glob.py
+   D /ground.jpg
+   M /main.py
+   M /menu.py
+   D /pilgram-swag.png
+   D /settings.py
+   D /superMoon.jpg
+
+Background image added. Menu made more generic. Settings removed; it's just a menu instance with different parameters now. Removed misspelled pilgrim image and obsolete background images.
+
+------------------------------------------------------------------------
+r102 | jdolinko | 2013-09-26 21:30:39 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Working alpha on player!
+
+------------------------------------------------------------------------
+r101 | jrivera | 2013-09-26 21:17:49 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+Took out a silly print statement
+
+------------------------------------------------------------------------
+r100 | mshavit | 2013-09-26 21:10:26 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+100 th commit !! dont move if both keys pressed
+
+------------------------------------------------------------------------
+r99 | coleary | 2013-09-26 21:09:50 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /guitar.png
+
+this is right!
+
+------------------------------------------------------------------------
+r98 | coleary | 2013-09-26 21:05:07 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /guitar.png
+
+this one works
+
+------------------------------------------------------------------------
+r97 | jrivera | 2013-09-26 21:04:41 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /menu.py
+   M /settings.py
+
+Added a title to menus
+
+------------------------------------------------------------------------
+r96 | coleary | 2013-09-26 20:59:35 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /guitar.png
+   M /player.py
+
+this works right sorry about 95
+
+------------------------------------------------------------------------
+r95 | coleary | 2013-09-26 20:57:17 -0400 (Thu, 26 Sep 2013) | 3 lines
+Changed paths:
+   M /player.py
+
+sprite is correctly formatted
+
+
+------------------------------------------------------------------------
+r94 | jrivera | 2013-09-26 20:12:13 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   M /main.py
+   A /settings.py
+
+Added a settings menu
+
+------------------------------------------------------------------------
+r93 | jdolinko | 2013-09-26 19:58:19 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Player Anim
+
+------------------------------------------------------------------------
+r92 | coleary | 2013-09-26 19:37:49 -0400 (Thu, 26 Sep 2013) | 3 lines
+Changed paths:
+   A /guitar.png
+   M /guitarist_nonstandardized.svg
+
+guitar.png
+X
+
+------------------------------------------------------------------------
+r91 | jrivera | 2013-09-26 19:10:26 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /glob.py
+   M /main.py
+   M /menu.py
+
+Added settings. Doesnt actually work dont click it
+
+------------------------------------------------------------------------
+r90 | mshavit | 2013-09-26 18:59:47 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+   M /player.py
+
+sprite directions added
+
+------------------------------------------------------------------------
+r89 | jdolinko | 2013-09-26 18:42:49 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Animations edited to go backwards and forwards
+
+------------------------------------------------------------------------
+r88 | sgriffin | 2013-09-26 18:40:50 -0400 (Thu, 26 Sep 2013) | 2 lines
+Changed paths:
+   A /guitarist_nonstandardized.svg
+   M /main.py
+
+svg commit
+
+------------------------------------------------------------------------
+r87 | jdolinko | 2013-09-26 18:23:57 -0400 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   M /main.py
+   M /player.py
+
+
+------------------------------------------------------------------------
+r86 | sgriffin | 2013-09-25 16:40:54 -0400 (Wed, 25 Sep 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Division to addition in player.py.
+
+------------------------------------------------------------------------
+r85 | mshavit | 2013-09-25 16:29:55 -0400 (Wed, 25 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /main.py
+   M /player.py
+
+Fixed physics, works on all machines.
+
+------------------------------------------------------------------------
+r84 | sgriffin | 2013-09-25 00:33:26 -0400 (Wed, 25 Sep 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+Fixed >= that should have been <= in main.py. The out of range bug is back!
+
+------------------------------------------------------------------------
+r83 | jdolinko | 2013-09-24 21:36:07 -0400 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   M /UNTITLED_PROJECT_1/untitled_game.py
+   M /game.py
+   M /player.py
+
+WE GOT CRAZY MOVEMENT
+
+------------------------------------------------------------------------
+r82 | sgriffin | 2013-09-24 21:33:21 -0400 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   A /exit.py
+   A /glob.py
+   A /menu.py
+
+Game states and menu.
+
+------------------------------------------------------------------------
+r81 | sgriffin | 2013-09-24 21:32:40 -0400 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /main.py
+   M /state.py
+
+Game states and menu update.
+
+------------------------------------------------------------------------
+r80 | coleary | 2013-09-24 20:42:38 -0400 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   A /pilgram-swag.png
+
+so much swag
+
+------------------------------------------------------------------------
+r79 | coleary | 2013-09-24 20:41:10 -0400 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /player.py
+
+adds some animation but it needs work
+
+------------------------------------------------------------------------
+r78 | coleary | 2013-09-22 21:19:04 -0400 (Sun, 22 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+fies attacks from above
+
+------------------------------------------------------------------------
+r77 | sgriffin | 2013-09-22 21:16:47 -0400 (Sun, 22 Sep 2013) | 1 line
+Changed paths:
+   M /game.py
+
+pep8 fix
+------------------------------------------------------------------------
+r76 | sgriffin | 2013-09-22 21:14:05 -0400 (Sun, 22 Sep 2013) | 1 line
+Changed paths:
+   M /gameObject.py
+   M /player.py
+
+merge fix
+------------------------------------------------------------------------
+r75 | coleary | 2013-09-22 21:07:24 -0400 (Sun, 22 Sep 2013) | 2 lines
+Changed paths:
+   M /README
+   M /enemy.py
+   M /game.py
+   M /gameImage.py
+   M /gameObject.py
+   M /main.py
+   M /player.py
+   M /state.py
+
+has names at the top 
+
+------------------------------------------------------------------------
+r74 | sgriffin | 2013-09-22 19:13:59 -0400 (Sun, 22 Sep 2013) | 2 lines
+Changed paths:
+   D /dummyEnemy.png
+   D /dummy_pic.png
+   M /enemy.py
+   A /rival_guitarist_small.png
+
+Added enemy image.
+
+------------------------------------------------------------------------
+r73 | sgriffin | 2013-09-22 19:04:54 -0400 (Sun, 22 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /player.py
+
+Fixed veloc zeroing on collision and removed enemy collision sounds for now.
+
+------------------------------------------------------------------------
+r72 | jdolinko | 2013-09-22 16:36:34 -0400 (Sun, 22 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+dummyEnemy.png is corrupt, used dummy_pic.png for enemies for now.
+
+------------------------------------------------------------------------
+r71 | coleary | 2013-09-22 13:59:55 -0400 (Sun, 22 Sep 2013) | 2 lines
+Changed paths:
+   M /README
+   M /game.py
+   M /gameImage.py
+
+pep8 adjustments
+
+------------------------------------------------------------------------
+r70 | coleary | 2013-09-22 13:49:36 -0400 (Sun, 22 Sep 2013) | 3 lines
+Changed paths:
+   M /README
+   M /dummyEnemy.png
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+now the enemies have lives and can die
+
+
+------------------------------------------------------------------------
+r69 | coleary | 2013-09-22 12:02:14 -0400 (Sun, 22 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+i added the abiltiy to attack on line 92 of game.py need feedback before submit
+
+------------------------------------------------------------------------
+r68 | coleary | 2013-09-21 19:05:16 -0400 (Sat, 21 Sep 2013) | 2 lines
+Changed paths:
+   M /README
+   M /gameObject.py
+
+updated the readme file a bit
+
+------------------------------------------------------------------------
+r67 | coleary | 2013-09-21 18:20:57 -0400 (Sat, 21 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+i got rid of the problem of dragging against the wall by taking out like 94 of game object, also added a groundheight
+
+------------------------------------------------------------------------
+r66 | sgriffin | 2013-09-20 17:27:04 -0400 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   D /guitarist.png
+   A /guitarist_small.png
+
+Switch to small guitarist for now due to lack of spritesheet implementation.
+
+------------------------------------------------------------------------
+r65 | sgriffin | 2013-09-20 17:26:10 -0400 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   A /guitarist.png
+   M /player.py
+
+Adding guitarist image.
+
+------------------------------------------------------------------------
+r64 | jdolinko | 2013-09-20 14:55:56 -0400 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.py
+
+Fixed height bug, added jumping!
+
+------------------------------------------------------------------------
+r63 | jdolinko | 2013-09-20 14:21:14 -0400 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+Fixed to pep8 standard.
+
+------------------------------------------------------------------------
+r62 | jdolinko | 2013-09-20 14:13:06 -0400 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+   M /player.py
+   A /thud.wav
+
+New thud sound, lowered drag constant, sound only plays once.
+
+------------------------------------------------------------------------
+r61 | sgriffin | 2013-09-19 23:51:11 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+
+Fix to stop 0 volume plays from overwriting other plays.
+
+------------------------------------------------------------------------
+r60 | sgriffin | 2013-09-19 23:27:34 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Can no longer apply a walking force in the direction you are collided.
+
+------------------------------------------------------------------------
+r59 | jrivera | 2013-09-19 22:30:17 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Fixed enemy.py
+
+------------------------------------------------------------------------
+r58 | jrivera | 2013-09-19 22:29:37 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   A /dummyEnemy.png
+
+Image for the enemy
+
+------------------------------------------------------------------------
+r57 | jrivera | 2013-09-19 22:29:20 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Added image to enemy
+
+------------------------------------------------------------------------
+r56 | jdolinko | 2013-09-19 22:23:51 -0400 (Thu, 19 Sep 2013) | 1 line
+Changed paths:
+   M /gameObject.py
+
+
+------------------------------------------------------------------------
+r55 | jrivera | 2013-09-19 22:16:40 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /player.py
+
+Added a image to the player
+
+------------------------------------------------------------------------
+r54 | sgriffin | 2013-09-19 22:10:59 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /player.py
+
+Print statement for volume.
+
+------------------------------------------------------------------------
+r53 | sgriffin | 2013-09-19 22:06:28 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Drag switched to be velocity dependant.
+
+------------------------------------------------------------------------
+r52 | sgriffin | 2013-09-19 21:58:36 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /player.py
+
+Wrongness in gameObject.
+
+------------------------------------------------------------------------
+r51 | jrivera | 2013-09-19 21:46:55 -0400 (Thu, 19 Sep 2013) | 3 lines
+Changed paths:
+   A /dummy_pic.png
+
+Adding a pic for our player
+
+
+------------------------------------------------------------------------
+r50 | mshavit | 2013-09-19 21:40:07 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+
+Worked on time and velocity 
+
+------------------------------------------------------------------------
+r49 | coleary | 2013-09-19 21:37:33 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+this has 13 enemeies
+
+------------------------------------------------------------------------
+r48 | sgriffin | 2013-09-19 21:31:40 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+
+Changed to player walking rather than apply forcing everywhere. A bug with player walking forever.
+
+------------------------------------------------------------------------
+r47 | jdolinko | 2013-09-19 21:27:43 -0400 (Thu, 19 Sep 2013) | 1 line
+Changed paths:
+   M /gameObject.py
+
+
+------------------------------------------------------------------------
+r46 | mshavit | 2013-09-19 21:23:20 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Enemies have randomish movement, bounce back from wall.
+
+------------------------------------------------------------------------
+r45 | sgriffin | 2013-09-19 21:13:09 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+
+dt accel fix.
+
+------------------------------------------------------------------------
+r44 | sgriffin | 2013-09-19 21:09:50 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+Removing print in main.
+
+------------------------------------------------------------------------
+r43 | mshavit | 2013-09-19 21:03:29 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+   M /main.py
+
+changed interval managment
+
+------------------------------------------------------------------------
+r42 | sgriffin | 2013-09-19 20:51:00 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+   M /main.py
+
+Fixing of intervals in main loop.
+
+------------------------------------------------------------------------
+r41 | mshavit | 2013-09-19 20:33:37 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /README
+   M /gameObject.py
+
+"fixed" bouncing, velocity when hitting wall
+
+------------------------------------------------------------------------
+r40 | sgriffin | 2013-09-19 20:25:40 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+Dumb dt changed to intervals for updating.
+
+------------------------------------------------------------------------
+r39 | jrivera | 2013-09-19 20:20:23 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Sound just plays constantly when you hit a wall
+
+------------------------------------------------------------------------
+r38 | sgriffin | 2013-09-19 20:14:45 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /main.py
+
+dt printing for debugging.
+
+------------------------------------------------------------------------
+r37 | sgriffin | 2013-09-19 20:13:18 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+Mult changed to field in enemy.py
+
+------------------------------------------------------------------------
+r36 | mshavit | 2013-09-19 20:10:34 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+testing
+
+------------------------------------------------------------------------
+r35 | mshavit | 2013-09-19 20:06:48 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+less chaotic randomness
+
+------------------------------------------------------------------------
+r34 | mshavit | 2013-09-19 20:02:40 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+random enemy movement
+
+------------------------------------------------------------------------
+r33 | mshavit | 2013-09-19 19:58:54 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+testing some stuff
+
+------------------------------------------------------------------------
+r32 | sgriffin | 2013-09-19 19:57:47 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Refactoring of update in gameObject.
+
+------------------------------------------------------------------------
+r31 | jrivera | 2013-09-19 19:57:00 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+ added sound to collide
+
+------------------------------------------------------------------------
+r30 | sgriffin | 2013-09-19 19:50:05 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Collide function call fixed for both walls.
+
+------------------------------------------------------------------------
+r29 | sgriffin | 2013-09-19 19:47:29 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /gameObject.py
+
+Drag brings velocity towards 0, not just subtracting.
+
+------------------------------------------------------------------------
+r28 | mshavit | 2013-09-19 19:39:50 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+applyforce instead of velocit
+
+------------------------------------------------------------------------
+r27 | sgriffin | 2013-09-19 19:38:51 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.py
+   M /main.py
+
+Player movement adjusted to use dt to have platform-independent speed.
+
+------------------------------------------------------------------------
+r26 | sgriffin | 2013-09-19 19:29:46 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Nothing done.
+
+------------------------------------------------------------------------
+r25 | sgriffin | 2013-09-19 19:23:52 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /player.py
+
+Enemies don't appear below ground.
+
+------------------------------------------------------------------------
+r24 | mshavit | 2013-09-19 19:23:09 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+
+removed a print
+
+------------------------------------------------------------------------
+r23 | sgriffin | 2013-09-19 19:20:02 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Drag added to game objects' velocities.
+
+------------------------------------------------------------------------
+r22 | mshavit | 2013-09-19 19:19:22 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /player.py
+
+Enemies move towards the player
+
+------------------------------------------------------------------------
+r21 | sgriffin | 2013-09-19 19:13:26 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Collision method added.
+
+------------------------------------------------------------------------
+r20 | sgriffin | 2013-09-19 19:06:34 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /enemy.py
+   M /game.py
+   M /gameObject.py
+   M /player.py
+
+Merge conflict fixes.
+
+------------------------------------------------------------------------
+r19 | jrivera | 2013-09-19 18:55:45 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   A /better_thud.wma
+
+Added sound file
+
+------------------------------------------------------------------------
+r18 | coleary | 2013-09-19 18:45:14 -0400 (Thu, 19 Sep 2013) | 3 lines
+Changed paths:
+   M /gameObject.py
+
+i added something in applied force that may play a sound
+
+
+------------------------------------------------------------------------
+r17 | mshavit | 2013-09-19 18:42:16 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   A /enemy.py
+   M /game.py
+   M /gameObject.py
+   D /gameObject.pyc
+   M /player.py
+
+added enemy class, added spriteSheet parameter to gameObject, player, and enemy
+
+------------------------------------------------------------------------
+r16 | sgriffin | 2013-09-19 18:36:51 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+
+Position update for player to be on ground.
+
+------------------------------------------------------------------------
+r15 | sgriffin | 2013-09-19 18:35:38 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.pyc
+
+Made everything smaller.
+
+------------------------------------------------------------------------
+r14 | sgriffin | 2013-09-19 18:34:40 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /gameObject.pyc
+   A /ground.jpg
+
+Added a ground image.
+
+------------------------------------------------------------------------
+r13 | jrivera | 2013-09-19 18:32:01 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /player.py
+
+Made game work with added GameObject parameters
+
+------------------------------------------------------------------------
+r12 | jrivera | 2013-09-19 18:27:41 -0400 (Thu, 19 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+Added width and height to the constructor
+
+------------------------------------------------------------------------
+r11 | mshavit | 2013-09-19 02:32:23 -0400 (Thu, 19 Sep 2013) | 5 lines
+Changed paths:
+   M /game.py
+   D /game.pyc
+   M /gameImage.py
+   D /gameImage.pyc
+   M /gameObject.py
+   M /gameObject.pyc
+   M /main.py
+   M /player.py
+   M /state.py
+   D /state.pyc
+
+Added handling for pygame.QUIT even (so we can close the window without CTRL+C)
+Corrected pep8 issues for all files except gameObject 
+Removed .pyc files (would cause conflicts between updates, but isn't necessary)
+
+
+------------------------------------------------------------------------
+r10 | jdolinko | 2013-09-18 17:21:53 -0400 (Wed, 18 Sep 2013) | 2 lines
+Changed paths:
+   M /game.py
+   M /game.pyc
+   M /gameImage.py
+   M /gameImage.pyc
+   M /gameObject.py
+   M /gameObject.pyc
+   M /main.py
+   M /player.py
+   M /state.py
+   M /state.pyc
+
+Added loadimages into GameObject for animation purposes.
+
+------------------------------------------------------------------------
+r9 | sgriffin | 2013-09-17 21:08:13 -0400 (Tue, 17 Sep 2013) | 1 line
+Changed paths:
+   M /game.py
+   M /game.pyc
+   M /gameObject.py
+   M /gameObject.pyc
+   M /player.py
+
+
+------------------------------------------------------------------------
+r8 | jrivera | 2013-09-17 20:26:06 -0400 (Tue, 17 Sep 2013) | 2 lines
+Changed paths:
+   M /gameObject.py
+
+trying to fix error
+
+------------------------------------------------------------------------
+r7 | sgriffin | 2013-09-17 20:25:10 -0400 (Tue, 17 Sep 2013) | 1 line
+Changed paths:
+   M /game.py
+   M /game.pyc
+   M /gameImage.pyc
+   M /gameObject.pyc
+   M /state.pyc
+
+
+------------------------------------------------------------------------
+r6 | sgriffin | 2013-09-17 20:21:43 -0400 (Tue, 17 Sep 2013) | 1 line
+Changed paths:
+   M /game.py
+   M /gameObject.py
+   M /player.py
+   D /player.pyc
+
+
+------------------------------------------------------------------------
+r5 | jdolinko | 2013-09-17 19:53:33 -0400 (Tue, 17 Sep 2013) | 1 line
+Changed paths:
+   A /UNTITLED_PROJECT_1
+   A /UNTITLED_PROJECT_1/Example-skeleton.png
+   A /UNTITLED_PROJECT_1/alien1.gif
+   A /UNTITLED_PROJECT_1/classtest.py
+   A /UNTITLED_PROJECT_1/oldplayer.gif
+   A /UNTITLED_PROJECT_1/untitled_game.py
+   M /game.pyc
+   M /gameImage.pyc
+   M /gameObject.pyc
+   A /player.pyc
+   M /state.pyc
+
+
+------------------------------------------------------------------------
+r4 | sgriffin | 2013-09-17 19:25:35 -0400 (Tue, 17 Sep 2013) | 1 line
+Changed paths:
+   M /README
+   M /game.py
+   M /game.pyc
+   M /gameObject.py
+   M /gameObject.pyc
+   M /player.py
+
+
+------------------------------------------------------------------------
+r3 | coleary | 2013-09-17 19:14:51 -0400 (Tue, 17 Sep 2013) | 2 lines
+Changed paths:
+   A /player.py
+
+Player init commit.
+
+------------------------------------------------------------------------
+r2 | jrivera | 2013-09-17 19:03:17 -0400 (Tue, 17 Sep 2013) | 2 lines
+Changed paths:
+   D /resultsPage
+
+deleted results page
+
+------------------------------------------------------------------------
+r1 | sgriffin | 2013-09-17 19:00:10 -0400 (Tue, 17 Sep 2013) | 1 line
+Changed paths:
+   A /README
+   A /game.py
+   A /game.pyc
+   A /gameImage.py
+   A /gameImage.pyc
+   A /gameObject.py
+   A /gameObject.pyc
+   A /main.py
+   A /resultsPage
+   A /state.py
+   A /state.pyc
+   A /superMoon.jpg
+
+
+------------------------------------------------------------------------

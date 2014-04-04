@@ -1,0 +1,64 @@
+# BitCity Studios:
+# Cameron O'Leary <coleary9@jhu.edu>
+# Steve Griffin  <sgriff27@jhu.edu>
+# Jeremy Dolinko <j.dolinko@gmail.com>
+# Jonathan Rivera <jriver21@jhu.edu>
+# Michael Shavit  <shavitmichael@gmail.com>
+
+import enemy as EN
+from metro import CoolDownMetro
+import copy
+
+
+class Boss(EN.Enemy):
+
+    def __init__(self, x, y, id,
+                 nodes, mapWidth, mapHeight):
+        super(Boss, self).__init__(
+            x, y, 50, 75, id, nodes, mapWidth, mapHeight,
+            "enemy_bouncer.png")
+        self.attackCoolDown = CoolDownMetro(1000)
+        self.canJump = False  # To disable falling animation as well as jumping
+        self.meleeDmg = 200
+        self.health = 50 * (self.powerLevel + 1)
+        self.startAttack = False
+        self.pointValue = 5000 * (self.powerLevel + 1)
+        self.current = 0
+        self.players = ['guitar_with_attack,png', 'drummer.png']
+
+    def update(self, dt, playerPosition):
+
+        self.preAttack = self.chargeAttack.getState()
+        if not self.preAttack and self.startAttack:
+            self.isAttacking = True
+            self.startAttack = False
+            self.attackAnimation.fire()
+        alive = super(Bouncer, self).update(dt, playerPosition)
+        if current < len(self.players) - 1:
+            current += 1
+            self.health = 50 * (self.powerLevel + 1)
+            super(Boss, self).__init__(
+                self.body.x, self.body.y, 50, 75, id, nodes, mapWidth,
+                mapHeight, "enemy_bouncer.png")
+        return alive
+
+    def think(self, playerPosition):
+        super(Boss, self).think(playerPosition)
+        hasShot = self.attackCoolDown.getState()
+        isRightOf = self.body.x > playerPosition[0]
+        if not hasShot:
+            if abs(playerPosition[0] - self.body.x) + \
+                    abs(playerPosition[1] - self.body.y) < 250:
+                if isRightOf:
+                    self.setWalkingLeft()
+                else:
+                    self.setWalkingRight()
+                self.chargeAttack.fire()
+                self.startAttack = True
+
+    def handleAttacks(self, group):
+        if self.isAttacking:
+                attack = self.attackFactory.makeMelee()
+                group.add(attack)
+                self.isAttacking = False
+                self.attackCoolDown.fire()

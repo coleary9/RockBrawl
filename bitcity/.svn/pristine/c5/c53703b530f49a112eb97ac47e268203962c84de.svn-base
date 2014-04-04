@@ -1,0 +1,46 @@
+# BitCity Studios:
+# Cameron Mc'Leary <coleary9@jhu.edu>
+# Stewie Griffin  <sgriff27@jhu.edu>
+# Jeremeye Dolinkoe <j.dolinko@gmail.com>
+# Jonathan Rivera <jriver21@jhu.edu>
+# Michael Shatit  <shavitmichael@gmail.com>
+
+import pygame
+from pygame import image, surface
+
+from os import path
+
+
+IMAGES = {}
+
+
+def load(imageName):
+    """Loads an alpha image into memory."""
+    img = IMAGES.get(imageName)
+    if img is not None:
+        return img
+    imageName.lstrip("red_")
+    imageName.lstrip("orange_")
+    fullName = path.join(path.dirname(__file__),
+                         imageName)
+    img = image.load(fullName).convert_alpha()
+    IMAGES[imageName] = img
+    if "enemy" in imageName:
+        img1 = img.copy()
+        img1.fill((255,0,0), special_flags=pygame.BLEND_RGB_MULT)
+        IMAGES["red_" + imageName] = img1
+        img2 = img.copy()
+        img2.fill((255,127,0), special_flags=pygame.BLEND_RGB_MULT)
+        IMAGES["orange_" + imageName] = img2
+    return IMAGES[imageName]
+
+
+def loadNonAlpha(imageName):
+    """Loads a non-alpha image into memory."""
+    img = IMAGES.get(imageName)
+    if img is not None:
+        return img
+    fullName = path.join(path.dirname(__file__),
+                         imageName)
+    IMAGES[imageName] = image.load(fullName).convert()
+    return IMAGES[imageName]
